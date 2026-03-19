@@ -1,11 +1,8 @@
-/* =========================================
-   Estilos Generales
-   ========================================= */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #e9ecef; /* Un fondo gris claro para que resalte la hoja del CV */
+    background-color: #e9ecef; 
     margin: 0;
     padding: 40px 20px;
 }
@@ -15,13 +12,9 @@ body {
     margin: 0 auto;
     background-color: #ffffff;
     padding: 50px 60px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra suave para simular una hoja de papel */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
     border-radius: 4px;
 }
-
-/* =========================================
-   Encabezado (Header)
-   ========================================= */
 .cv-header {
     text-align: center;
     border-bottom: 3px solid #2c3e50;
@@ -49,10 +42,6 @@ body {
     color: #7f8c8d;
     margin: 0;
 }
-
-/* =========================================
-   Títulos de Secciones
-   ========================================= */
 h2 {
     color: #2c3e50;
     border-bottom: 2px solid #bdc3c7;
@@ -82,10 +71,6 @@ ul {
 li {
     margin-bottom: 6px;
 }
-
-/* =========================================
-   Sección de Experiencia
-   ========================================= */
 .job {
     margin-bottom: 25px;
 }
@@ -93,8 +78,6 @@ li {
 .job-header {
     margin-bottom: 10px;
 }
-
-/* Esto asegura que la fecha se alinee a la derecha correctamente */
 .date {
     float: right;
     font-weight: 600;
@@ -104,35 +87,26 @@ li {
     padding: 2px 8px;
     border-radius: 3px;
 }
-
-/* Limpia el float de la fecha para que no rompa el diseño */
 .job-header::after {
     content: "";
     display: table;
     clear: both;
 }
-
 .company {
     font-weight: bold;
     color: #34495e;
     margin: 0;
     font-size: 1.05em;
 }
-
 .job-details p {
     margin: 8px 0 4px 0;
 }
-
-/* =========================================
-   Diseño en Columnas (Grid) para Habilidades
-   ========================================= */
 .skills-wrapper, .additional-info-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin-top: 20px;
 }
-
 @media print {
     body {
         background-color: white;
@@ -143,7 +117,6 @@ li {
         padding: 0;
         max-width: 100%;
     }
-    /* Evita que los trabajos se corten a la mitad en diferentes páginas */
     .job, .skills-wrapper, .additional-info-wrapper {
         page-break-inside: avoid;
     }
