@@ -31,9 +31,6 @@ body {
 .box-5 { grid-area: cinco; background-color: slateblue; }
 .box-6 { grid-area: seis; background-color: orchid; }
 
-/* =========================================
-   VISTA MÓVIL (Tu primera imagen)
-   ========================================= */
 .grid-container {
     display: grid;
     gap: 20px;
