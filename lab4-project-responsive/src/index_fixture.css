@@ -1,0 +1,63 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.box-1 { grid-area: uno; background-color: deeppink; }
+.box-2 { grid-area: dos; background-color: mediumseagreen; }
+.box-3 { grid-area: tres; background-color: tomato; }
+.box-4 { grid-area: cuatro; background-color: steelblue; }
+.box-5 { grid-area: cinco; background-color: slateblue; }
+.box-6 { grid-area: seis; background-color: orchid; }
+
+/* =========================================
+   VISTA MÓVIL (Tu primera imagen)
+   ========================================= */
+.grid-container {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 150px; 
+
+    grid-template-areas:
+        "uno uno"
+        "dos dos"
+        "tres cuatro"
+        "cinco cinco";
+}
+@media (min-width: 900px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        grid-template-rows: 150px 300px 150px; 
+
+        grid-template-areas:
+            "uno uno uno"     
+            "dos tres tres"   
+            "cuatro cinco seis"; 
+    }
+}
