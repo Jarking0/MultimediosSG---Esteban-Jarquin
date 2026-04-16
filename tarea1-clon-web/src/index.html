@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decavisa - Clon académico</title>
+  <meta name="description" content="Clon académico de la sección principal de Decavisa usando HTML semántico y CSS puro.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__left">
+      <a href="#inicio" class="brand" aria-label="Inicio Decavisa">
+        <img src="img/logo.png" alt="Logotipo de Decavisa">
+      </a>
+    </div>
+
+    <div class="site-header__right">
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="main-nav__list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#almacenes">Almacenes</a></li>
+          <li><a href="#contacto" class="nav-button">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__media">
+        <img src="img/principal.jpg" alt="Interior de un almacén Decavisa con góndolas y productos">
+      </div>
+
+      <div class="hero__overlay">
+        <div class="hero__card">
+          <h1>Almacenes<br>Decavisa</h1>
+
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--orange">Contáctanos</a>
+            <a href="#almacenes" class="btn btn--ghost">Almacenes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="nosotros">
+      <div class="container about__grid">
+        <div class="about__content">
+          <h2 class="section-title section-title--orange">¿Quiénes somos?</h2>
+          <p>
+            Somos una cadena de tiendas al por mayor y detalle, presentes en todo el mercado nacional.
+            Contamos con una amplia gama de categorías de productos al menor precio.
+          </p>
+          <a href="#" class="btn btn--red btn--red-full">Conocer más</a>
+        </div>
+
+        <div class="about__shape">
+          <img src="img/comp1.png" alt="Composición gráfica de fotografías interiores de tiendas Decavisa">
+        </div>
+      </div>
+    </section>
+
+    <section class="affiliate section">
+      <div class="container affiliate__grid">
+        <div class="affiliate__shape">
+          <img src="img/comp2.png" alt="Composición gráfica con productos y artículos de belleza">
+        </div>
+
+        <div class="affiliate__content">
+          <h2 class="section-title section-title--blue">Afíliate a Estilo y Belleza</h2>
+          <p>
+            En Decavisa trabajamos para resaltar tu belleza, por eso hemos creado un club exclusivo para vos.
+            Al ser parte de nuestro club, tendrás acceso a precios especiales en artículos de belleza, promociones y mucho más.
+          </p>
+          <p>
+            Cuando estés afiliada al Club, lo único que tenés que hacer es mostrar en nuestras tiendas tu cédula
+            de identidad para disfrutar de los beneficios que te ofrecemos.
+          </p>
+          <p class="affiliate__highlight">¡Afíliate ahora!</p>
+          <a href="#contacto" class="btn btn--red">Afíliate</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section">
+      <div class="container">
+        <div class="products__panel">
+          <div class="products__header">
+            <div>
+              <h2 class="products__title">Productos</h2>
+              <p class="products__text">
+                En Decavisa contamos con más de 20.000 productos divididos en las siguientes categorías:
+              </p>
+            </div>
+
+            <a href="#" class="btn btn--ghost btn--ghost-light">Ver todos</a>
+          </div>
+
+          <section class="products__grid" aria-label="Categorías de productos">
+            <article class="product-card product-card--red">
+              <img src="img/casa.png" alt="Ícono de la categoría hogar">
+              <h3>Hogar</h3>
+            </article>
+
+            <article class="product-card product-card--orange">
+              <img src="img/loto.png" alt="Ícono de la categoría belleza y salud">
+              <h3>Belleza y<br>salud</h3>
+            </article>
+
+            <article class="product-card product-card--yellow">
+              <img src="img/dos-manos.png" alt="Ícono de la categoría cuidado personal">
+              <h3>Cuidado<br>personal</h3>
+            </article>
+
+            <article class="product-card product-card--cyan">
+              <img src="img/pelota.png" alt="Ícono de la categoría juguetería">
+              <h3>Juguetería</h3>
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="warehouses section" id="almacenes">
+      <div class="container warehouses__container">
+        <h2 class="section-title section-title--red center">Almacenes</h2>
+        <p class="warehouses__intro">
+          Contamos con 11 almacenes en el territorio nacional. Conocé nuestras sucursales:
+        </p>
+
+        <nav class="warehouses__tabs" aria-label="Provincias">
+          <a href="#" class="warehouses__tab warehouses__tab--province active">San José</a>
+          <a href="#" class="warehouses__tab warehouses__tab--province">Puntarenas</a>
+          <a href="#" class="warehouses__tab warehouses__tab--province">Guanacaste</a>
+          <a href="#" class="warehouses__tab warehouses__tab--province">Limón</a>
+          <a href="#" class="warehouses__tab warehouses__tab--province">Alajuela</a>
+        </nav>
+
+        <nav class="warehouses__tabs warehouses__tabs--secondary" aria-label="Sucursales">
+          <a href="#" class="warehouses__tab warehouses__tab--branch active">San José</a>
+          <a href="#" class="warehouses__tab warehouses__tab--branch">Pérez Zeledón 1</a>
+          <a href="#" class="warehouses__tab warehouses__tab--branch">Pérez Zeledón 2</a>
+          <a href="#" class="warehouses__tab warehouses__tab--branch">Alajuelita</a>
+        </nav>
+
+        <section class="warehouse-card">
+          <h3>Decavisa San José</h3>
+
+          <div class="warehouse-card__info">
+            <div class="warehouse-card__column">
+              <p>400 norte del Hospital San Juan de Dios, Bodega 1 (Antiguo Abonos Agro)</p>
+              <p>2256-0374 / 2437-7860</p>
+              <p>6311-8386</p>
+            </div>
+
+            <div class="warehouse-card__column">
+              <p>mayorista.sanjose3@decavisa.com</p>
+              <p>Lunes a Sábado: 8:00am a 6:00pm<br>Domingos: 9:00am a 6:00pm</p>
+            </div>
+          </div>
+
+          <div class="warehouse-card__map">
+            <img src="img/mapa.png" alt="Mapa de ubicación de Decavisa San José">
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <div class="container contact__grid">
+        <section class="contact-card">
+          <h2>Contactanos</h2>
+          <p>
+            Podés comunicarte con nosotros completando el siguiente formulario y te responderemos
+            lo antes posible.
+          </p>
+
+          <div class="contact-card__box">
+            <p>+506 2437-7800</p>
+            <p>info@decavisa.com</p>
+
+            <div class="contact-card__social">
+              <a href="#" aria-label="Facebook">f</a>
+              <a href="#" aria-label="Instagram">◎</a>
+              <a href="#" aria-label="YouTube">▶</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-form-wrap">
+          <form class="contact-form" action="#" method="post">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Escriba su nombre completo" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input id="correo" name="correo" type="email" placeholder="Indique su correo electrónico" required>
+
+            <label for="asunto">Asunto</label>
+            <input id="asunto" name="asunto" type="text" placeholder="Escriba el asunto" required>
+
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" name="telefono" type="tel" placeholder="Escriba su número de teléfono">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Mensaje" required></textarea>
+
+            <button type="submit" class="btn btn--red contact-form__button">Enviar</button>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <section class="footer-col footer-col--blue">
+      <img src="img/logo-footer.png" alt="Logotipo de Decavisa en color blanco">
+      <p>Almacenes Decavisa. Ventas al por mayor Costa Rica</p>
+      <hr>
+      <p>Copyright © 2026 Decavisa S.A.</p>
+    </section>
+
+    <section class="footer-col footer-col--red">
+      <h2>Contacto</h2>
+      <p>info@decavisa.com</p>
+      <p>+506 2437-7800</p>
+
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="YouTube">▶</a>
+      </div>
+    </section>
+
+    <section class="footer-col footer-col--orange">
+      <h2>Rutas clave</h2>
+      <ul>
+        <li><a href="#">Decavisa productos</a></li>
+        <li><a href="#">Ventas al por mayor Costa Rica</a></li>
+        <li><a href="#">Juguetería en Costa Rica</a></li>
+        <li><a href="#">Política de apartados, garantía y devoluciones</a></li>
+      </ul>
+    </section>
+
+    <section class="footer-col footer-col--yellow">
+      <h2>Secciones</h2>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#almacenes">Almacenes</a></li>
+      </ul>
+    </section>
+  </footer>
+</body>
+</html>
