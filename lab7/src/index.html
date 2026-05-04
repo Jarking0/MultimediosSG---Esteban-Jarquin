@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeatMaker Academy</title>
+</head>
+<body>
+
+  <aside>
+    <h2>BeatMaker Academy</h2>
+    <div class="skill-tree" id="tree-container">
+      <!-- Los cubos se inyectan aquí -->
+    </div>
+  </aside>
+
+  <main>
+    <div id="welcome-message">
+      <h1>Bienvenido al Estudio</h1>
+      <p>Selecciona una habilidad en el panel izquierdo para cargar el temario.</p>
+    </div>
+    
+    <div id="content-area">
+      <h1 id="course-title">Título</h1>
+      <p id="course-desc">Descripción</p>
+      
+      <div class="video-container">
+        <iframe id="youtube-video" src="" allowfullscreen></iframe>
+      </div>
+
+      <div id="highlights-container">
+        <h2 style="color: var(--accent-indigo);">Highlights</h2>
+        <ul class="highlights-list" id="highlights-list">
+           <!-- Highlights se inyectan aquí -->
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
