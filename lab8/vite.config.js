@@ -5,5 +5,6 @@ export default defineConfig({
   base: "/MultimediosSG---Esteban-Jarquin/lab8/", 
   build: {
     outDir: "../dist", 
+    target: "esnext"
   }
 });
