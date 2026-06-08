@@ -35,6 +35,14 @@
       padding: 2px 6px;
       border-radius: 4px;
     }
+    pre {
+      background:#111827;
+      color:#f8fafc;
+      padding:1rem;
+      border-radius:8px;
+      max-width:600px;
+      margin:1rem auto;
+    }
   </style>
 </head>
 <body>
@@ -42,11 +50,11 @@
   <p>Este laboratorio consiste en un script NodeJS (<code>analizar.js</code>) que analiza archivos de texto y muestra el número de líneas, palabras y caracteres.</p>
 
   <h2>Resultado de la consola NodeJS</h2>
-  <!-- Cambia la ruta de la imagen según donde la guardes -->
-  <img src="assets/image.png" alt="Resultado del script analizar.js en consola">
+  <!-- Ruta relativa: index.html está en la raíz y la imagen en assets/ -->
+  <img src="./assets/image.png" alt="Resultado del script analizar.js en consola">
 
-  <p>Ejemplo de ejecución:</p>
-  <pre style="background:#111827;color:#f8fafc;padding:1rem;border-radius:8px;max-width:600px;margin:1rem auto;">
+  <h2>Ejemplo de ejecución</h2>
+  <pre>
 PS C:\Users\esteb\Codigos\Multimedios\lab13> node analizar.js --file texto.txt
 Análisis del archivo: texto.txt
 Líneas: 4
@@ -54,6 +62,6 @@ Palabras: 13
 Caracteres: 76
   </pre>
 
-  <p>Consulta el <a href="https://github.com/tuusuario/lab13" target="_blank">README del repositorio</a> para más detalles.</p>
+  <p>Archivo de prueba: <a href="./texto.txt" target="_blank">Descargar texto.txt</a></p>
 </body>
 </html>
