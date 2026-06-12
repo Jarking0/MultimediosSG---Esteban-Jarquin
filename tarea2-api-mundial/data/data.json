@@ -1,0 +1,80 @@
+[
+  {
+    "nombre": "Copa Mundial Qatar 2022",
+    "anio": 2022,
+    "sede": "Qatar",
+    "campeon": "Argentina",
+    "subcampeon": "Francia",
+    "goleador": "Kylian Mbappe",
+    "equipos": 32,
+    "imagen": "qatar-2022.avif",
+    "slug": "qatar-2022",
+    "resumen": "Argentina campeon tras una final epica ante Francia.",
+    "descripcion": "Primer Mundial en Medio Oriente; Argentina gano en penales su tercer titulo."
+  },
+  {
+    "nombre": "Copa Mundial Rusia 2018",
+    "anio": 2018,
+    "sede": "Rusia",
+    "campeon": "Francia",
+    "subcampeon": "Croacia",
+    "goleador": "Harry Kane",
+    "equipos": 32,
+    "imagen": "rusia-2018.avif",
+    "slug": "rusia-2018",
+    "resumen": "Francia logra su segunda estrella mundial.",
+    "descripcion": "El VAR hace su debut oficial en una Copa del Mundo. Francia dominó con un equipo joven y dinámico."
+  },
+  {
+    "nombre": "Copa Mundial Brasil 2014",
+    "anio": 2014,
+    "sede": "Brasil",
+    "campeon": "Alemania",
+    "subcampeon": "Argentina",
+    "goleador": "James Rodriguez",
+    "equipos": 32,
+    "imagen": "brasil-2014.avif",
+    "slug": "brasil-2014",
+    "resumen": "Alemania se corona tetracampeona en el Maracaná.",
+    "descripcion": "Mundial recordado por el histórico 7-1 de Alemania a Brasil en semifinales."
+  },
+  {
+    "nombre": "Copa Mundial Sudafrica 2010",
+    "anio": 2010,
+    "sede": "Sudafrica",
+    "campeon": "Espana",
+    "subcampeon": "Paises Bajos",
+    "goleador": "Diego Forlan",
+    "equipos": 32,
+    "imagen": "sudafrica-2010.avif",
+    "slug": "sudafrica-2010",
+    "resumen": "España consigue su primer Mundial con el gol de Iniesta.",
+    "descripcion": "Primer Mundial realizado en el continente africano, famoso por las vuvuzelas y el 'Waka Waka'."
+  },
+  {
+    "nombre": "Copa Mundial Alemania 2006",
+    "anio": 2006,
+    "sede": "Alemania",
+    "campeon": "Italia",
+    "subcampeon": "Francia",
+    "goleador": "Miroslav Klose",
+    "equipos": 32,
+    "imagen": "alemania-2006.avif",
+    "slug": "alemania-2006",
+    "resumen": "Italia tetracampeona tras vencer a Francia en penales.",
+    "descripcion": "Torneo marcado por el retiro de Zinedine Zidane tras su cabezazo a Marco Materazzi en la final."
+  },
+  {
+    "nombre": "Copa Mundial Corea-Japon 2002",
+    "anio": 2002,
+    "sede": "Corea del Sur y Japon",
+    "campeon": "Brasil",
+    "subcampeon": "Alemania",
+    "goleador": "Ronaldo Nazario",
+    "equipos": 32,
+    "imagen": "corea-japon-2002.avif",
+    "slug": "corea-japon-2002",
+    "resumen": "Brasil pentacampeón liderado por Ronaldo.",
+    "descripcion": "Primer mundial organizado por dos países de manera conjunta y primero en realizarse en Asia."
+  }
+]
