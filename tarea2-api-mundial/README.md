@@ -22,21 +22,19 @@ API REST desarrollada con Node.js, Express y SQLite que provee información sobr
 
 ## 📸 Capturas de Pruebas (HTTPie / XH)
 
-*(Sustituye este texto por las imágenes de tus capturas de pantalla)*
-
 1. `xh GET :4321/mundiales`
-   ![Prueba 1](./capturas/prueba1.png)
+   ![Prueba 1](./public/capturas/Prueba 1.png)
 2. `xh GET :4321/mundiales include==full`
-   ![Prueba 2](./capturas/prueba2.png)
+   ![Prueba 2](./public/capturas/Prueba 2.png)
 3. `xh GET :4321/mundial/qatar-2022`
-   ![Prueba 3](./capturas/prueba3.png)
+   ![Prueba 3](./public/capturas/Prueba 3.png)
 4. `xh GET :4321/mundial/inexistente` (Debe devolver 404)
-   ![Prueba 4](./capturas/prueba4.png)
+   ![Prueba 4](./public/capturas/Prueba 4.png)
 5. `xh GET :4321/campeon/Argentina`
-   ![Prueba 5](./capturas/prueba5.png)
+   ![Prueba 5](./public/capturas/Prueba 5.png)
 6. `xh GET :4321/random`
-   ![Prueba 6](./capturas/prueba6.png)
+   ![Prueba 6](./public/capturas/Prueba 6.png)
 7. `xh GET :4321/search/final`
-   ![Prueba 7](./capturas/prueba7.png)
+   ![Prueba 7](./public/capturas/Prueba 7.png)
 8. `xh GET :4321/search/ab` (Debe devolver 400 JSON)
-   ![Prueba 8](./capturas/prueba8.png)
+   ![Prueba 8](./public/capturas/Prueba 8.png)
