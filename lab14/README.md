@@ -53,6 +53,6 @@
 
 Prueba de acceso a imágenes a través del navegador web demostrando el correcto funcionamiento de `express.static`:
 
-* **Thriller (Michael Jackson):** [http://localhost:4321/imagenes/thriller.png](http://localhost:4321/imagenes/thriller.avif)
-* **The Search (NF):** [http://localhost:4321/imagenes/thesearch.png](http://localhost:4321/imagenes/the-search.avif)
+* **Thriller (Michael Jackson):** [http://localhost:4321/imagenes/thriller.png](http://localhost:4321/imagenes/thriller.png)
+* **The Search (NF):** [http://localhost:4321/imagenes/thesearch.png](http://localhost:4321/imagenes/thesearch.png)
 
