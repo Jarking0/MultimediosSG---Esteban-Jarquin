@@ -1,0 +1,74 @@
+[
+  {
+    "titulo": "Thriller",
+    "artista": "Michael Jackson",
+    "genero": "Pop",
+    "anio": 1982,
+    "sello": "Epic",
+    "pistas": 9,
+    "imagen": "thriller.png",
+    "slug": "thriller",
+    "resumen": "El album mas vendido de la historia.",
+    "descripcion": "Album de Michael Jackson que redefinio la musica pop de los anos 80, incluyendo exitos mundiales como Billie Jean y Beat It."
+  },
+  {
+    "titulo": "Graves Into Gardens",
+    "artista": "Elevation Worship",
+    "genero": "Worship",
+    "anio": 2020,
+    "sello": "Elevation Worship Records",
+    "pistas": 12,
+    "imagen": "gravesintogardens.png",
+    "slug": "graves-into-gardens",
+    "resumen": "Un album en vivo poderoso y transformador.",
+    "descripcion": "Grabado en vivo en la iglesia Elevation, incluye el gigantesco éxito que le da nombre al disco y el himno global 'The Blessing'."
+  },
+  {
+    "titulo": "Cloud Nine",
+    "artista": "Kygo",
+    "genero": "Tropical House",
+    "anio": 2016,
+    "sello": "Sony Music",
+    "pistas": 15,
+    "imagen": "cloudnine.jpg",
+    "slug": "cloud-nine",
+    "resumen": "El album debut del rey del tropical house.",
+    "descripcion": "Incluye mega exitos globales como 'Firestone' y 'Stole the Show', definiendo por completo el sonido electronico del verano de 2016."
+  },
+  {
+    "titulo": "DATA",
+    "artista": "Tainy",
+    "genero": "Reggaeton / Electronic",
+    "anio": 2023,
+    "sello": "NEON16",
+    "pistas": 19,
+    "imagen": "data.jpg",
+    "slug": "data",
+    "resumen": "Una obra maestra de la produccion urbana y electronica.",
+    "descripcion": "El aclamado album debut del legendario productor Tainy, combinando reggaeton con sintetizadores retro, junto a estrellas como Bad Bunny y Daddy Yankee."
+  },
+  {
+    "titulo": "The Search",
+    "artista": "NF",
+    "genero": "Hip Hop",
+    "anio": 2019,
+    "sello": "NF Real Music",
+    "pistas": 20,
+    "imagen": "thesearch.png",
+    "slug": "the-search",
+    "resumen": "Un viaje oscuro e introspectivo por la mente de NF.",
+    "descripcion": "El cuarto album de estudio del rapero, el cual alcanzo el numero 1 en Billboard, destacando por su honestidad brutal sobre la salud mental y la fama."
+  },
+  {
+    "titulo": "Meteora",
+    "artista": "Linkin Park",
+    "genero": "Nu Metal",
+    "anio": 2003,
+    "sello": "Warner Bros",
+    "pistas": 13,
+    "imagen": "meteora.jpg",
+    "slug": "meteora",
+    "resumen": "El disco que consolido el nu metal en la cultura pop.",
+    "descripcion": "Segundo album de la banda que incluye himnos generacionales como 'Numb' y 'Faint', mezclando rap, rock duro y electronica a la perfeccion."
+  }
+]
