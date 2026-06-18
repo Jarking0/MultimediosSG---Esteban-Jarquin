@@ -2,7 +2,7 @@
   <header class="header">
     <h1>Enciclopedia del Automovilismo</h1>
     <button @click="$emit('toggle-theme')" class="theme-btn">
-      {{ isDark ? '☀️ Modo Claro' : '🌙 Modo Oscuro' }}
+      {{ isDark ? 'Modo Claro' : 'Modo Oscuro' }}
     </button>
   </header>
 </template>

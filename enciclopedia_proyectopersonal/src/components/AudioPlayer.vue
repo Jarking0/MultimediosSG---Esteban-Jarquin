@@ -1,6 +1,6 @@
 <template>
   <div class="audio-player" v-if="src">
-    <p>🔊 Escuchar narración:</p>
+    <p>Escuchar narración:</p>
     <audio controls :src="src"></audio>
   </div>
 </template>
