@@ -63,7 +63,7 @@ Si el usuario hace clic en cualquiera de las imágenes dentro de la pestaña de 
 
 | Lightbox en Historia | Lightbox en Pilotos |
 | :---: | :---: |
-| ![Lightbox Historia](./public/img/capturas/Funcion%20Imagen%20Historia.png) | ![Lightbox Pilotos](./public/img/capturas/Funcion%20Imagen%20Pilotos.png) |
+| ![Lightbox Historia](./public/img/capturas/Funcion%20Imagen%20Historia.png) | ![Lightbox Pilotos](./public/img/capturas/PilotoAmpliado.png) |
 
 ### 5. Pestaña "Datos Técnicos"
 Una cuadrícula limpia (`CSS Grid`) que extrae del JSON las métricas más impresionantes de cada vehículo (Velocidad máxima, aceleración, fuerzas G, potencia, etc.), formateadas para una lectura rápida.
