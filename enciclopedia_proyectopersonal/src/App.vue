@@ -1,10 +1,7 @@
 <template>
   <div :class="['app-container', { 'dark-mode': isDarkMode }]">
     <main class="wrapper">
-      <HeaderSection 
-        :isDark="isDarkMode" 
-        @toggle-theme="isDarkMode = !isDarkMode" 
-      />
+      <HeaderSection :isDark="isDarkMode" @toggle-theme="isDarkMode = !isDarkMode" />
 
       <FilterControls 
         v-model:searchQuery="searchQuery"
@@ -17,13 +14,23 @@
           v-for="entry in filteredEntries" 
           :key="entry.id" 
           :entry="entry" 
+          @seleccionar="abrirModal"
         />
       </div>
       
       <p v-if="filteredEntries.length === 0" class="no-results">
-        No se encontraron categorías.
+        No se encontraron categorías. 🏁
       </p>
     </main>
+
+    <Transition name="fade">
+      <EntryModal 
+        v-if="entradaSeleccionada" 
+        :entry="entradaSeleccionada" 
+        @close="entradaSeleccionada = null" 
+      />
+    </Transition>
+
   </div>
 </template>
 
@@ -32,11 +39,19 @@ import { ref, computed, onMounted } from 'vue';
 import HeaderSection from './components/HeaderSection.vue';
 import FilterControls from './components/FilterControls.vue';
 import EntryCard from './components/EntryCard.vue';
+import EntryModal from './components/EntryModal.vue'; // IMPORTAMOS EL MODAL
 
 const entries = ref([]);
 const searchQuery = ref('');
 const selectedCategory = ref('Todas');
 const isDarkMode = ref(false);
+
+// ESTADO PARA EL MODAL
+const entradaSeleccionada = ref(null);
+
+const abrirModal = (entry) => {
+  entradaSeleccionada.value = entry;
+};
 
 const categories = computed(() => {
   const cats = new Set(entries.value.map(e => e.categoria));
@@ -62,7 +77,6 @@ onMounted(async () => {
 </script>
 
 <style>
-
 :root {
   --bg-color: #f3f4f6; /* Gris muy clarito para el fondo */
   --text-color: #1f2937; /* Gris muy oscuro para las letras (Modo claro) */
@@ -107,5 +121,36 @@ body {
   text-align: center;
   font-size: 1.2rem;
   margin-top: 2rem;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-from .modal-container,
+.fade-leave-to .modal-container {
+  transform: translateY(20px) scale(0.95);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: stretch; /* Asegura que todas las tarjetas estiren igual */
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
