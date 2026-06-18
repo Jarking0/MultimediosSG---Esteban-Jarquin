@@ -35,53 +35,53 @@ Sigue estos pasos para correr el proyecto localmente en tu computadora:
 
 ## Capturas de Pantalla y Funcionalidades
 
-A continuación, se detalla el funcionamiento de los distintos módulos de la aplicación, evidenciando la reactividad y el diseño de la interfaz:
+AA continuación, se detalla el funcionamiento de los distintos módulos de la aplicación, evidenciando la reactividad y el diseño de la interfaz:
 
 ### 1. Sistema de Temas (Modo Claro / Oscuro)
 La aplicación cuenta con un botón en el encabezado que permite alternar el tema visual de toda la página en tiempo real. Esto se logró mediante el uso de variables CSS dinámicas que ajustan el contraste de los fondos y textos para mejorar la accesibilidad y reducir la fatiga visual.
 
 | Modo Claro | Modo Oscuro |
 | :---: | :---: |
-| ![Modo Claro](./capturas/Claro.jpg) | ![Modo Oscuro](./capturas/Oscuro.jpg) |
+| ![Modo Claro](./img/capturas/Claro.png) | ![Modo Oscuro](./img/capturas/Oscuro.png) |
 
 ### 2. Motor de Búsqueda y Filtrado Reactivo
-Aprovechando las propiedades computadas (`computed`) de Vue 3, la vista principal reacciona instantáneamente a las acciones del usuario sin necesidad de recargar la página. Se puede escribir en la barra para buscar coincidencias en los títulos o hacer clic en las "píldoras" de categorías para aislar disciplinas específicas (ej. Rally, Resistencia).
+Aprovechando las propiedades computadas (`computed`) de Vue 3, la vista principal reacciona instantáneamente a las acciones del usuario sin necesidad de recargar la página. Se puede escribir en la barra para buscar coincidencias en los títulos o hacer clic en las "píldoras" de categorías para aislar disciplinas específicas.
 
 | Filtrado por Categoría | Búsqueda por Texto |
 | :---: | :---: |
-| ![Filtro](./capturas/Filtro.jpg) | ![Busqueda](./capturas/Busqueda.jpg) |
+| ![Filtro](./img/capturas/Filtro.png) | ![Busqueda](./img/capturas/Busqueda.png) |
 
 ### 3. Modal de Detalles: Pestaña "Historia" y Multimedia
 Al hacer clic en "Ver detalles" en cualquier tarjeta, se despliega un modal superpuesto. La pestaña principal de **Historia** no solo carga párrafos de texto enriquecido, sino que integra dos elementos multimedia clave:
 * **Audio de Narración:** Un reproductor nativo en la parte inferior que permite escuchar un resumen locutado de la historia de la categoría.
 * **Galería Interactiva:** Una cuadrícula de imágenes en miniatura que responden al cursor (efecto hover).
 
-![Historia](./capturas/Historia.jpg)
+![Historia](./img/capturas/Historia.png)
 
 ### 4. Visor de Imágenes a Pantalla Completa (Lightbox)
-Si el usuario hace clic en cualquiera de las imágenes dentro de la pestaña de Historia, la aplicación bloquea el fondo y abre un componente tipo **Lightbox**. Esto permite ver la fotografía en alta resolución junto con su descripción (`alt` text) flotando en la parte inferior.
+Si el usuario hace clic en cualquiera de las imágenes dentro de la pestaña de **Historia** o en el carrusel interactivo de la pestaña de **Pilotos**, la aplicación bloquea el fondo y abre un componente tipo **Lightbox**. Esto permite ver la fotografía en alta resolución, oscureciendo el resto de la interfaz y mostrando la descripción de la imagen (`alt` text) en la parte inferior.
 
-![Lightbox](./capturas/Funcion%20Imagen%20Historia.png)
+| Lightbox en Historia | Lightbox en Pilotos |
+| :---: | :---: |
+| ![Lightbox Historia](./img/capturas/Funcion%20Imagen%20Historia.png) | ![Lightbox Pilotos](./img/capturas/Funcion%20Imagen%20Pilotos.png) |
 
 ### 5. Pestaña "Datos Técnicos"
 Una cuadrícula limpia (`CSS Grid`) que extrae del JSON las métricas más impresionantes de cada vehículo (Velocidad máxima, aceleración, fuerzas G, potencia, etc.), formateadas para una lectura rápida.
 
-![Datos Técnicos](./capturas/Datos.jpg)
+![Datos Técnicos](./img/capturas/Datos.png)
 
 ### 6. Pestaña "Pilotos" (Carrusel Interactivo)
-Esta sección se rediseñó para incluir un componente tipo *Slideshow*. Las imágenes de los pilotos cambian automáticamente mediante un temporizador, pero el usuario también puede tomar el control manual utilizando las flechas laterales (`❮` `❯`) o los indicadores de puntos inferiores para navegar por las biografías.
+Esta sección cuenta con un componente tipo *Slideshow*. Las imágenes de los pilotos cambian automáticamente mediante un temporizador, pero el usuario también puede tomar el control manual utilizando las flechas laterales (`❮` `❯`) o los indicadores de puntos inferiores. Además, al hacer clic sobre la fotografía de cualquier piloto, la imagen se expande gracias a la integración del Lightbox.
 
-![Pilotos](./capturas/Pilotos.jpg)
+![Pilotos](./img/capturas/Pilotos.png)
+![Piloto Ampliado](./img/capturas/PilotoAmpliado.png)
 
 ### 7. Pestaña "Equipos"
 Una vista de lista estructurada para leer cómodamente la información histórica de las escuderías y marcas fabricantes más exitosas de cada competición, manteniendo el diseño minimalista.
 
-![Equipos](./capturas/Equipos.jpg)
+![Equipos](./img/capturas/Equipos.png)
 
 ### 8. Pestaña "Timeline" (Eventos Clave)
 Una representación cronológica que recorre los hitos, tragedias, revoluciones tecnológicas y momentos deportivos que definieron el rumbo de cada categoría automovilística a lo largo de las décadas.
 
-![Timeline](./capturas/Timeline.jpg)
-
----
-**Desarrollado por:** Esteban Jarquín
+![Timeline](./img/capturas/Timeline.png)

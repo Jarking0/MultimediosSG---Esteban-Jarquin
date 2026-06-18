@@ -4,8 +4,15 @@
       <button class="close-btn" @click="$emit('close')">✖</button>
       
       <div class="modal-header">
-        <h2 class="modal-title">{{ entry.titulo }}</h2>
-        <span class="modal-badge">{{ entry.categoria }}</span>
+        <div class="header-title-group">
+          <div class="modal-logo-wrapper">
+            <img :src="entry.imagen_logo" :alt="entry.titulo + ' logo'" class="modal-logo" />
+          </div>
+          <div class="header-text">
+            <h2 class="modal-title">{{ entry.titulo }}</h2>
+            <span class="modal-badge">{{ entry.categoria }}</span>
+          </div>
+        </div>
       </div>
 
       <nav class="tabs">
@@ -61,7 +68,12 @@
               
               <Transition name="fade" mode="out-in">
                 <div class="slide" :key="slideIndexPilotos">
-                  <img :src="entry.pilotos[slideIndexPilotos].imagen" :alt="entry.pilotos[slideIndexPilotos].nombre" class="slide-img" />
+                  <img 
+                    :src="entry.pilotos[slideIndexPilotos].imagen" 
+                    :alt="entry.pilotos[slideIndexPilotos].nombre" 
+                    class="slide-img interactive"
+                    @click="openLightbox({ src: entry.pilotos[slideIndexPilotos].imagen, alt: entry.pilotos[slideIndexPilotos].nombre })"
+                  />
                   <div class="slide-caption">
                     <em>{{ entry.pilotos[slideIndexPilotos].nombre }}</em>
                   </div>
@@ -153,7 +165,6 @@ const stopTimerPilotos = () => {
   if (slideTimerPilotos) clearInterval(slideTimerPilotos); 
 };
 
-// Controles manuales que reinician el contador automático
 const manualNextPiloto = () => { 
   nextSlidePiloto(); 
   stopTimerPilotos(); 
@@ -204,9 +215,29 @@ onUnmounted(() => {
 }
 .close-btn:hover { opacity: 1; }
 
-.modal-header { padding: 2rem 2rem 1rem 2rem; }
-.modal-title { margin: 0 0 0.5rem 0; font-size: 1.8rem; }
-.modal-badge { background: var(--primary-color); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
+.modal-header { padding: 2rem 2rem 1.5rem 2rem; }
+.header-title-group {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.modal-logo-wrapper {
+  width: 65px; height: 65px;
+  background-color: #ffffff; 
+  border-radius: 50%;
+  display: flex; justify-content: center; align-items: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.modal-logo {
+  width: 45px; height: 45px;
+  object-fit: contain;
+}
+.header-text {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 0.4rem;
+}
+.modal-title { margin: 0; font-size: 1.8rem; line-height: 1.2; }
+.modal-badge { margin: 0; background: var(--primary-color); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
 
 /* TABS */
 .tabs {
@@ -232,13 +263,15 @@ onUnmounted(() => {
 .historia-img { 
   width: 100%; height: 110px; object-fit: cover; border-radius: 6px; 
 }
-.historia-img.interactive {
+.interactive {
   cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.interactive:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
 }
 .historia-img.interactive:hover {
-  transform: scale(1.05);
-  opacity: 0.8;
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 .historia-audio { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1); }
@@ -272,6 +305,7 @@ onUnmounted(() => {
 .slide-caption {
   position: absolute; bottom: 0; left: 0; width: 100%; padding: 1rem;
   background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: #fff; font-size: 1.1rem; font-weight: bold; letter-spacing: 0.5px;
+  pointer-events: none; 
 }
 
 /* FLECHAS DE NAVEGACIÓN MANUAL */
