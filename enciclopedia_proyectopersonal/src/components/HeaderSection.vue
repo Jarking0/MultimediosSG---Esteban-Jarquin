@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <h1>🪐 Enciclopedia del Sistema Solar</h1>
+    <h1>Enciclopedia del Automovilismo</h1>
     <button @click="$emit('toggle-theme')" class="theme-btn">
       {{ isDark ? '☀️ Modo Claro' : '🌙 Modo Oscuro' }}
     </button>

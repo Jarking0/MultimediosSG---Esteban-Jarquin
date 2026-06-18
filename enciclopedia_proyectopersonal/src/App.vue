@@ -21,7 +21,7 @@
       </div>
       
       <p v-if="filteredEntries.length === 0" class="no-results">
-        No se encontraron astros. ☄️
+        No se encontraron categorías.
       </p>
     </main>
   </div>
@@ -33,19 +33,16 @@ import HeaderSection from './components/HeaderSection.vue';
 import FilterControls from './components/FilterControls.vue';
 import EntryCard from './components/EntryCard.vue';
 
-// Estado Reactivo
 const entries = ref([]);
 const searchQuery = ref('');
 const selectedCategory = ref('Todas');
 const isDarkMode = ref(false);
 
-// Extraer categorías únicas
 const categories = computed(() => {
   const cats = new Set(entries.value.map(e => e.categoria));
   return ['Todas', ...cats];
 });
 
-// Computed property para filtrar en tiempo real (Requisito cumplido)
 const filteredEntries = computed(() => {
   return entries.value.filter(entry => {
     const matchesSearch = entry.titulo.toLowerCase().includes(searchQuery.value.toLowerCase());
@@ -54,7 +51,6 @@ const filteredEntries = computed(() => {
   });
 });
 
-// Ciclo de vida: Cargar datos desde JSON (Requisito cumplido)
 onMounted(async () => {
   try {
     const response = await fetch('/data/enciclopedia.json');
@@ -66,31 +62,32 @@ onMounted(async () => {
 </script>
 
 <style>
-/* Variables CSS globales para el modo claro/oscuro */
+
 :root {
-  --bg-color: #f0f2f5;
-  --text-color: #333333;
-  --card-bg: #ffffff;
+  --bg-color: #f3f4f6; /* Gris muy clarito para el fondo */
+  --text-color: #1f2937; /* Gris muy oscuro para las letras (Modo claro) */
+  --card-bg: #ffffff; /* Tarjetas blancas */
   --header-bg: #ffffff;
-  --primary-color: #3b82f6;
+  --primary-color: #dc2626; /* Un rojo racing para el tema de autos */
 }
 
 .dark-mode {
-  --bg-color: #121212;
-  --text-color: #f3f4f6;
-  --card-bg: #1f2937;
+  --bg-color: #111827; /* Azul noche muy oscuro */
+  --text-color: #f9fafb; /* Blanco tiza para las letras (Modo oscuro) */
+  --card-bg: #1f2937; /* Tarjetas grises oscuras */
   --header-bg: #1f2937;
-  --primary-color: #2563eb;
+  --primary-color: #ef4444; /* Rojo más brillante para el modo oscuro */
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: background-color 0.3s ease;
+  color: var(--text-color); /* El body hereda el color de texto correcto */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Estilos para el contenedor principal */
 .app-container {
   min-height: 100vh;
   padding: 2rem;

@@ -1,12 +1,85 @@
 [
-  { "id": 1, "titulo": "El Sol", "categoria": "Estrella", "imagen": "/img/sol.jpg", "descripcion": "La estrella en el centro de nuestro sistema solar, responsable de la vida en la Tierra." },
-  { "id": 2, "titulo": "Mercurio", "categoria": "Planeta Interior", "imagen": "/img/mercurio.jpg", "descripcion": "El planeta más pequeño y cercano al Sol." },
-  { "id": 3, "titulo": "Venus", "categoria": "Planeta Interior", "imagen": "/img/venus.jpg", "descripcion": "El planeta más caluroso del sistema solar debido a su densa atmósfera." },
-  { "id": 4, "titulo": "La Tierra", "categoria": "Planeta Interior", "imagen": "/img/tierra.jpg", "descripcion": "Nuestro hogar, el único planeta conocido que alberga vida.", "audio": "/audio/tierra.mp3" },
-  { "id": 5, "titulo": "La Luna", "categoria": "Satélite", "imagen": "/img/luna.jpg", "descripcion": "El único satélite natural de la Tierra." },
-  { "id": 6, "titulo": "Marte", "categoria": "Planeta Interior", "imagen": "/img/marte.jpg", "descripcion": "Conocido como el planeta rojo, es el objetivo principal de la exploración espacial futura.", "audio": "/audio/marte.mp3" },
-  { "id": 7, "titulo": "Júpiter", "categoria": "Planeta Exterior", "imagen": "/img/jupiter.jpg", "descripcion": "El planeta más grande de nuestro sistema solar, un gigante gaseoso.", "audio": "/audio/jupiter.mp3" },
-  { "id": 8, "titulo": "Saturno", "categoria": "Planeta Exterior", "imagen": "/img/saturno.jpg", "descripcion": "Famoso por su impresionante sistema de anillos brillantes." },
-  { "id": 9, "titulo": "Urano", "categoria": "Planeta Exterior", "imagen": "/img/urano.jpg", "descripcion": "Un gigante de hielo que rota de lado." },
-  { "id": 10, "titulo": "Neptuno", "categoria": "Planeta Exterior", "imagen": "/img/neptuno.jpg", "descripcion": "El planeta más lejano del Sol, oscuro, frío y azotado por vientos supersónicos." }
+  {
+    "id": 1,
+    "titulo": "Fórmula 1",
+    "categoria": "Monoplazas",
+    "imagen_pista": "/img/f1.jpg",
+    "imagen_logo": "/img/f1_logo.png",
+    "descripcion": "La máxima categoría del automovilismo mundial, famosa por sus autos de alta tecnología, aerodinámica extrema y velocidad pura.",
+    "audio": "/audio/f1.mp3"
+  },
+  {
+    "id": 2,
+    "titulo": "24 Horas de Le Mans",
+    "categoria": "Resistencia",
+    "imagen_pista": "/img/24lemans.jpg",
+    "imagen_logo": "/img/24lemans_logo.png",
+    "descripcion": "La carrera de resistencia más prestigiosa del mundo. Pilotos y máquinas compiten al límite durante 24 horas ininterrumpidas en el circuito de la Sarthe.",
+    "audio": "/audio/lemans.mp3"
+  },
+  {
+    "id": 3,
+    "titulo": "Campeonato Mundial de Rally (WRC)",
+    "categoria": "Rally",
+    "imagen_pista": "/img/wrc.avif",
+    "imagen_logo": "/img/wrc_logo.png",
+    "descripcion": "Competición extrema donde los pilotos corren contra el reloj en caminos de tierra, nieve, asfalto y hielo bajo condiciones climáticas brutales.",
+    "audio": "/audio/wrc.mp3"
+  },
+  {
+    "id": 4,
+    "titulo": "NASCAR Cup Series",
+    "categoria": "Stock Cars",
+    "imagen_pista": "/img/nascar.jpg",
+    "imagen_logo": "/img/nascar_logo.png",
+    "descripcion": "La categoría reina en Estados Unidos, conocida por sus emocionantes carreras en óvalos a velocidades vertiginosas y el contacto constante entre los autos."
+  },
+  {
+    "id": 5,
+    "titulo": "IndyCar Series",
+    "categoria": "Monoplazas",
+    "imagen_pista": "/img/indycar.jpg",
+    "imagen_logo": "/img/indycar_logo.png",
+    "descripcion": "La principal categoría de monoplazas en EE. UU. Su evento estrella son las míticas 500 Millas de Indianápolis."
+  },
+  {
+    "id": 6,
+    "titulo": "Rally Dakar",
+    "categoria": "Rally Raid",
+    "imagen_pista": "/img/dakar.jpg",
+    "imagen_logo": "/img/dakar_logo.png",   
+    "descripcion": "La carrera de campo a través más dura del planeta, atravesando dunas, desiertos y terrenos implacables durante varias semanas."
+  },
+  {
+    "id": 7,
+    "titulo": "Fórmula E",
+    "categoria": "Monoplazas",
+    "imagen_pista": "/img/fe.jpg",
+    "imagen_logo": "/img/fe_logo.png",
+    "descripcion": "El futuro del automovilismo. Carreras de monoplazas 100% eléctricos disputadas en circuitos callejeros en el centro de las ciudades más importantes."
+  },
+  {
+    "id": 8,
+    "titulo": "DTM (Deutsche Tourenwagen Masters)",
+    "categoria": "Turismos",
+    "imagen_pista": "/img/dtm.jpg",
+    "imagen_logo": "/img/dtm_logo.png",
+    "descripcion": "El campeonato de turismos más importante de Alemania y uno de los más competitivos del mundo, utilizando potentes autos GT3."
+  },
+  {
+    "id": 9,
+    "titulo": "IMSA SportsCar Championship",
+    "categoria": "Resistencia",
+    "imagen_pista": "/img/imsa.jpg",
+    "imagen_logo": "/img/imsa_logo.png",
+    "descripcion": "El principal campeonato de autos deportivos y prototipos en Norteamérica, famoso por las 24 Horas de Daytona."
+  },
+  {
+  "id": 10,
+  "titulo": "World Endurance Championship",
+  "categoria": "Resistencia",
+  "imagen_pista": "/img/wec.webp",
+  "imagen_logo": "/img/wec_logo.png",
+  "descripcion": "El Campeonato Mundial de Resistencia (WEC) es la máxima competición de carreras de resistencia organizada por la FIA y el ACO. Reúne a prototipos Hypercar y vehículos LMGT3 en pruebas icónicas como las 24 Horas de Le Mans, donde equipos y pilotos compiten por la victoria en carreras de larga duración."
+ }
 ]
