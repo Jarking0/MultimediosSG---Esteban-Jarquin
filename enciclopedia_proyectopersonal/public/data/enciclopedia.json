@@ -10,9 +10,9 @@
     "audio_historia": "/audio/f1_historia.mp3",
     "historia": [
       "La Fórmula 1 tiene sus raíces en las carreras de automovilismo de Gran Premio disputadas en Europa durante las décadas de 1920 y 1930. Sin embargo, no fue hasta 1946 que la Federación Internacional del Automóvil (FIA) estandarizó las reglas de la categoría.",
-      "El primer campeonato mundial oficial de pilotos se celebró en 1950, con la carrera inaugural en el histórico circuito de Silverstone, Reino Unido. Los primeros años fueron dominados por fabricantes europeos como Alfa Romeo, Ferrari, Maserati y Mercedes-Benz, y pilotos legendarios como Juan Manuel Fangio.",
+      "El primer campeonato mundial oficial de pilotos se celebró en 1950, con la carrera inaugural en el histórico circuito de Silverstone, Reino Unido. Los primeros años fueron dominados por fabricantes europeos como Alfa Romeo, Ferrari, Maserati y Mercedes-Benz.",
       "A partir de la década de 1970, la F1 vivió una revolución aerodinámica y comercial. La introducción del efecto suelo, los motores turbo en los 80s y la encarnizada rivalidad entre Ayrton Senna y Alain Prost elevaron la categoría a un fenómeno televisivo global.",
-      "Hoy en día, la Fórmula 1 es la cúspide de la ingeniería automotriz. Con la introducción de los motores V6 turbo-híbridos ultracomplejos en 2014, el deporte se ha enfocado en la eficiencia extrema, la seguridad de los pilotos con el sistema 'Halo' y un tope presupuestario para igualar la competencia."
+      "Hoy en día, la Fórmula 1 es la cúspide de la ingeniería automotriz. Con la introducción de los motores V6 turbo-híbridos ultracomplejos en 2014, el deporte se ha enfocado en la eficiencia extrema, la seguridad con el sistema 'Halo' y un tope presupuestario."
     ],
     "historiaImagenes": [
       { "src": "/img/f1_historia1.jpg", "alt": "Carrera clásica de F1 en Silverstone 1950" },
@@ -22,25 +22,31 @@
     "stats": [
       { "label": "Velocidad Max", "valor": "372", "unidad": "km/h" },
       { "label": "Aceleración", "valor": "2.6", "unidad": "s (0-100)" },
+      { "label": "Fuerza G Max", "valor": "6", "unidad": "G (Frenado/Curva)" },
       { "label": "Potencia", "valor": "1000+", "unidad": "HP" },
-      { "label": "Peso Mínimo", "valor": "798", "unidad": "kg" }
+      { "label": "Peso Mínimo", "valor": "798", "unidad": "kg" },
+      { "label": "Límite Costos", "valor": "135", "unidad": "Millones USD" }
     ],
     "pilotos": [
-      { "nombre": "Michael Schumacher", "detalle": "7 veces Campeón del Mundo, reconstruyó la dinastía Ferrari.", "imagen": "/img/f1_schumacher.jpg" },
-      { "nombre": "Lewis Hamilton", "detalle": "7 veces Campeón del Mundo, récord absoluto de victorias y poles.", "imagen": "/img/f1_lewis.avif" },
-      { "nombre": "Ayrton Senna", "detalle": "3 veces Campeón, considerado el piloto más rápido a una vuelta y maestro bajo la lluvia.", "imagen": "/img/f1_senna.avif" }
+      { "nombre": "Michael Schumacher", "detalle": "Ganador de 7 campeonatos mundiales. Cambió el estándar de preparación física en el deporte y reconstruyó desde las cenizas la dinastía más dominante de Ferrari a principios de los 2000s.", "imagen": "/img/pilotos/f1_schumacher.jpg" },
+      { "nombre": "Lewis Hamilton", "detalle": "Igualó los 7 campeonatos de Schumacher y ostenta los récords absolutos históricos de más victorias (100+) y pole positions, siendo la cara de la era híbrida con Mercedes.", "imagen": "/img/pilotos/f1_lewis.avif" },
+      { "nombre": "Ayrton Senna", "detalle": "Tricampeón mundial brasileño. Considerado casi unánimemente por sus pares como el piloto más rápido a una vuelta y el máximo artista bajo la lluvia. Falleció trágicamente en Imola 1994.", "imagen": "/img/pilotos/f1_senna.avif" }
     ],
     "equipos": [
-      { "nombre": "Scuderia Ferrari", "detalle": "El equipo más antiguo y laureado, presente desde 1950.", "imagen": "/img/equipos/ferrari.jpg" },
-      { "nombre": "McLaren Racing", "detalle": "Segundo equipo más exitoso, dominó los 80s y 90s.", "imagen": "/img/equipos/mclaren.jpg" },
-      { "nombre": "Mercedes-AMG", "detalle": "Ganadores de 8 títulos de constructores consecutivos (2014-2021).", "imagen": "/img/equipos/mercedes.jpg" }
+      { "nombre": "Scuderia Ferrari", "detalle": "La sangre y el alma de la F1. Es el único equipo que ha competido en todas las temporadas desde 1950, acumulando 16 títulos de constructores." },
+      { "nombre": "McLaren Racing", "detalle": "Fundado por Bruce McLaren, es el segundo equipo más exitoso. Vivió su época dorada en los 80s y 90s con leyendas como Lauda, Prost y Senna." },
+      { "nombre": "Williams Racing", "detalle": "Creado por Sir Frank Williams. Dominadores tecnológicos en los 90s con suspensión activa y creadores de múltiples campeones." },
+      { "nombre": "Mercedes-AMG Petronas", "detalle": "Destrozaron los libros de historia al ganar 8 campeonatos de constructores consecutivos (2014-2021) gracias a su revolucionario motor híbrido." },
+      { "nombre": "Red Bull Racing", "detalle": "Un equipo que nació de una marca de bebidas energéticas y se convirtió en una potencia ganadora gracias al genio aerodinámico Adrian Newey." }
     ],
     "temporadas": [
       { "anio": "1950", "descripcion": "Giuseppe Farina gana el primer campeonato mundial con Alfa Romeo." },
-      { "anio": "1976", "descripcion": "Épica e icónica batalla por el título entre Niki Lauda y James Hunt." },
+      { "anio": "1976", "descripcion": "Épica e icónica batalla por el título entre Niki Lauda (quien sobrevivió a un accidente en llamas) y James Hunt." },
+      { "anio": "1988", "descripcion": "McLaren-Honda gana 15 de 16 carreras con el mítico MP4/4 conducido por Senna y Prost." },
       { "anio": "1994", "descripcion": "El trágico fin de semana de Imola donde fallecen Ayrton Senna y Roland Ratzenberger, cambiando la seguridad para siempre." },
-      { "anio": "2008", "descripcion": "Lewis Hamilton gana su primer título mundial en la última curva del GP de Brasil." },
-      { "anio": "2014", "descripcion": "Comienza la Era Turbo-Híbrida V6, marcando el inicio del dominio de Mercedes." },
+      { "anio": "2004", "descripcion": "Michael Schumacher gana su séptimo título mundial con una aplastante temporada a bordo del Ferrari F2004." },
+      { "anio": "2008", "descripcion": "Lewis Hamilton gana su primer título mundial en la última curva de la última vuelta en el GP de Brasil." },
+      { "anio": "2014", "descripcion": "Comienza la Era Turbo-Híbrida V6, marcando el inicio del implacable dominio de Mercedes." },
       { "anio": "2021", "descripcion": "Polémico y dramático final de temporada en Abu Dhabi entre Max Verstappen y Lewis Hamilton." }
     ]
   },
@@ -54,10 +60,10 @@
     "audio": "/audio/lemans.mp3",
     "audio_historia": "/audio/lemans_historia.mp3",
     "historia": [
-      "Celebrada por primera vez el 26 de mayo de 1923, las 24 Horas de Le Mans nacieron como una alternativa a las carreras de Grand Prix. Su objetivo original era probar la durabilidad, fiabilidad y eficiencia de los vehículos de producción en lugar de solo su velocidad bruta.",
-      "El evento ganó fama mundial en las décadas de 1950 y 1960. Sin embargo, en 1955 fue escenario de la peor tragedia en la historia del automovilismo, cuando un accidente cobró la vida de más de 80 espectadores, lo que llevó a un cambio masivo en los estándares de seguridad de los circuitos en todo el mundo.",
-      "A lo largo de los años, Le Mans ha visto épocas doradas de rivalidades entre fabricantes, siendo la más famosa la guerra entre Ford y Ferrari en la década de 1960. Posteriormente, la era de los brutales prototipos del Grupo C en los 80s y los innovadores prototipos diésel e híbridos en los 2000s definieron el desarrollo tecnológico.",
-      "Hoy, Le Mans forma parte de la 'Triple Corona del Automovilismo' y es la joya del Campeonato Mundial de Resistencia (WEC). Con la reciente introducción de las categorías Hypercar (LMH y LMDh), la carrera vive un renacimiento con la participación récord de las marcas automotrices más prestigiosas."
+      "Celebrada por primera vez el 26 de mayo de 1923, las 24 Horas de Le Mans nacieron como una alternativa a las carreras de Grand Prix. Su objetivo original era probar la durabilidad, fiabilidad y eficiencia de los vehículos.",
+      "En 1955 fue escenario de la peor tragedia en la historia del automovilismo, cuando un accidente cobró la vida de más de 80 espectadores, lo que llevó a un cambio masivo en los estándares de seguridad.",
+      "Le Mans ha visto épocas doradas de rivalidades, siendo la más famosa la guerra entre Ford y Ferrari en la década de 1960. Posteriormente, la era de los brutales prototipos del Grupo C y los LMP1 híbridos definieron la tecnología global.",
+      "Hoy, Le Mans es la joya del Campeonato Mundial de Resistencia (WEC). Con la reciente introducción de las categorías Hypercar (LMH y LMDh), la carrera vive un renacimiento sin precedentes de fabricantes."
     ],
     "historiaImagenes": [
       { "src": "/img/lemans_historia1.jpg", "alt": "Salida corriendo tipo Le Mans clásica" },
@@ -66,25 +72,31 @@
     ],
     "stats": [
       { "label": "Velocidad Max", "valor": "340", "unidad": "km/h" },
+      { "label": "Cambios de marcha", "valor": "20,000+", "unidad": "por carrera" },
       { "label": "Duración", "valor": "24", "unidad": "Horas" },
       { "label": "Distancia", "valor": "5000+", "unidad": "km" },
-      { "label": "Pilotos", "valor": "3", "unidad": "por auto" }
+      { "label": "Pilotos", "valor": "3", "unidad": "por auto" },
+      { "label": "Desgaste Físico", "valor": "Hasta 2", "unidad": "kg de peso perdido por turno" }
     ],
     "pilotos": [
-      { "nombre": "Tom Kristensen", "detalle": "Apodado 'Mr. Le Mans', posee el récord absoluto con 9 victorias absolutas.", "imagen": "/img/pilotos/kristensen.jpg" },
-      { "nombre": "Jacky Ickx", "detalle": "El rey belga de la resistencia, con 6 victorias en la mítica prueba.", "imagen": "/img/pilotos/ickx.jpg" },
-      { "nombre": "Henri Pescarolo", "detalle": "Leyenda francesa, ostenta el récord de 33 participaciones y 4 victorias.", "imagen": "/img/pilotos/pescarolo.jpg" }
+      { "nombre": "Tom Kristensen", "detalle": "Apodado 'Mr. Le Mans'. El piloto más exitoso de la historia de la prueba con 9 victorias absolutas, la mayoría conseguidas durante la era dominante de Audi.", "imagen": "/img/pilotos/lemans_kristensen.jpg" },
+      { "nombre": "Jacky Ickx", "detalle": "Conocido como el primer rey de Le Mans, este piloto belga conquistó la carrera en 6 ocasiones, incluyendo victorias icónicas caminando hacia su auto como protesta por la seguridad.", "imagen": "/img/pilotos/lemans_ickx.jpg" },
+      { "nombre": "Henri Pescarolo", "detalle": "Una verdadera institución francesa de la carrera. Ostenta el récord absoluto de participaciones con 33 salidas, logrando 4 victorias generales y formando su propio equipo homónimo.", "imagen": "/img/pilotos/lemans_pescarolo.avif" }
     ],
     "equipos": [
-      { "nombre": "Porsche", "detalle": "La marca más ganadora de la historia con 19 victorias absolutas.", "imagen": "/img/equipos/porsche.jpg" },
-      { "nombre": "Audi", "detalle": "Dominadores de los años 2000s, revolucionaron con motores Diésel (13 victorias).", "imagen": "/img/equipos/audi.jpg" },
-      { "nombre": "Ferrari", "detalle": "11 victorias absolutas, protagonistas de las eras más míticas de la carrera.", "imagen": "/img/equipos/ferrari.jpg" }
+      { "nombre": "Porsche", "detalle": "La marca más laureada en el circuito de la Sarthe con 19 victorias absolutas. Crearon monstruos mecánicos icónicos como el 917 y el 956." },
+      { "nombre": "Audi", "detalle": "Llegaron en los años 2000s y cambiaron el juego introduciendo tecnología de inyección directa y luego motores Diésel (TDI), acumulando 13 victorias." },
+      { "nombre": "Ferrari", "detalle": "Ganadores de 11 ediciones absolutas. Protagonizaron las batallas más románticas de los años 60s y ganaron en su sorpresivo regreso a la categoría reina en 2023." },
+      { "nombre": "Toyota Gazoo Racing", "detalle": "Tras décadas de cruel mala suerte (como perder en la última vuelta en 2016), finalmente dominaron la era reciente ganando 5 veces consecutivas." },
+      { "nombre": "Peugeot", "detalle": "Orgullo francés que ha triunfado en tres eras distintas (1992, 1993 y 2009), siempre apostando por diseños aerodinámicos sumamente radicales." }
     ],
     "temporadas": [
       { "anio": "1923", "descripcion": "Primera edición de la carrera ganada por el equipo francés Chenard & Walcker." },
-      { "anio": "1955", "descripcion": "El Desastre de Le Mans, una tragedia que cambió el automovilismo mundial." },
-      { "anio": "1966", "descripcion": "Ford logra el histórico 1-2-3 con el GT40, destronando el dominio de Ferrari." },
-      { "anio": "1970", "descripcion": "Porsche consigue su primera victoria absoluta con el legendario 917K." },
+      { "anio": "1955", "descripcion": "El Desastre de Le Mans, una tragedia que cambió el automovilismo mundial y causó que Mercedes se retirara de las carreras por décadas." },
+      { "anio": "1966", "descripcion": "Ford logra el histórico 1-2-3 con el GT40, destronando el dominio italiano en la famosa guerra 'Ford v Ferrari'." },
+      { "anio": "1969", "descripcion": "Jacky Ickx gana tras caminar lentamente a su auto en la salida (protestando contra la peligrosa 'Salida Le Mans'), forzando el cambio de reglas." },
+      { "anio": "1988", "descripcion": "El prototipo WM Peugeot rompe la barrera del sonido en la recta de Mulsanne alcanzando los 407 km/h, un récord intocable." },
+      { "anio": "1999", "descripcion": "Una de las ediciones más famosas donde compitieron Toyota, BMW, Audi y Mercedes, recordada por los espeluznantes vuelcos en el aire de los Mercedes CLR." },
       { "anio": "2006", "descripcion": "Audi hace historia al ganar por primera vez con un prototipo de motor Diésel (R10 TDI)." },
       { "anio": "2023", "descripcion": "Edición del Centenario con una dramática victoria de Ferrari en su regreso a la categoría reina tras 50 años." }
     ]
@@ -99,37 +111,43 @@
     "audio": "/audio/wrc.mp3",
     "audio_historia": "/audio/wrc_historia.mp3",
     "historia": [
-      "El Campeonato Mundial de Rally (WRC) se estableció formalmente en 1973, uniendo prestigiosas pruebas preexistentes como el Rally de Montecarlo, el Rally Safari en Kenia y el Rally de los 1000 Lagos en Finlandia. En sus inicios, solo se otorgaba el título a los fabricantes.",
-      "La década de 1980 marcó la llegada de la era más radical y peligrosa del automovilismo: el Grupo B. Estos vehículos carecían casi por completo de restricciones de potencia o diseño. Si bien fascinaron al mundo, una serie de trágicos accidentes fatales forzaron su prohibición definitiva en 1986.",
-      "A partir de 1997, las reglas del 'World Rally Car' modernizaron el deporte. Esta era estuvo dominada por marcas japonesas y europeas, y vio el ascenso de ídolos populares como Colin McRae, Carlos Sainz y Tommi Mäkinen, llevando el rally a los videojuegos y a la cultura pop global.",
-      "En el siglo XXI, el WRC fue dominado abrumadoramente por pilotos franceses (Sébastien Loeb y Sébastien Ogier). En 2022, el campeonato dio un paso crucial hacia la sostenibilidad al introducir los espectaculares vehículos híbridos de la categoría Rally1, capaces de generar 500 caballos de fuerza."
+      "El WRC se estableció en 1973 uniendo prestigiosas pruebas preexistentes como el Rally de Montecarlo y el de los 1000 Lagos en Finlandia.",
+      "La década de 1980 marcó la llegada de la era más radical: el Grupo B. Estos vehículos carecían casi de restricciones de potencia, pero una serie de accidentes fatales forzaron su prohibición definitiva en 1986.",
+      "A partir de 1997, las reglas del 'World Rally Car' modernizaron el deporte. Esta era vio el ascenso de ídolos populares como Colin McRae y Tommi Mäkinen, llevando el rally a los videojuegos y a la cultura pop global.",
+      "En el siglo XXI, el WRC fue dominado abrumadoramente por la dupla de pilotos franceses Loeb y Ogier. En 2022 se introdujeron los espectaculares vehículos híbridos de la categoría Rally1."
     ],
     "historiaImagenes": [
       { "src": "/img/wrc_historia1.jpg", "alt": "Audi Quattro del Grupo B saltando" },
-      { "src": "/img/wrc_historia2.jpg", "alt": "Subaru Impreza de Colin McRae" },
+      { "src": "/img/wrc_historia2.avif", "alt": "Subaru Impreza de Colin McRae" },
       { "src": "/img/wrc_historia3.jpg", "alt": "Auto moderno Rally1 en la nieve" }
     ],
     "stats": [
       { "label": "Velocidad Max", "valor": "200+", "unidad": "km/h (tierra)" },
       { "label": "Aceleración", "valor": "3.0", "unidad": "s (0-100)" },
       { "label": "Potencia", "valor": "500", "unidad": "HP (Híbridos)" },
-      { "label": "Superficies", "valor": "4", "unidad": "Tierra, Nieve, Asfalto, Hielo" }
+      { "label": "Neumáticos", "valor": "Hasta 28", "unidad": "asignados por rally" },
+      { "label": "Superficies", "valor": "4", "unidad": "Tierra, Nieve, Asfalto, Hielo" },
+      { "label": "Navegación", "valor": "100%", "unidad": "Dependiente de las notas del copiloto" }
     ],
     "pilotos": [
-      { "nombre": "Sébastien Loeb", "detalle": "El piloto más laureado con 9 campeonatos mundiales consecutivos.", "imagen": "/img/pilotos/loeb.jpg" },
-      { "nombre": "Sébastien Ogier", "detalle": "Leyenda francesa con 8 títulos mundiales y múltiples victorias en Montecarlo.", "imagen": "/img/pilotos/ogier.jpg" },
-      { "nombre": "Carlos Sainz", "detalle": "'El Matador', bicampeón del mundo y leyenda española del rally.", "imagen": "/img/pilotos/sainz.jpg" }
+      { "nombre": "Sébastien Loeb", "detalle": "El GOAT del rally. Ganó 9 campeonatos mundiales de forma consecutiva (2004-2012) dominando en todo tipo de superficies posibles.", "imagen": "/img/pilotos/wrc_loeb.avif" },
+      { "nombre": "Sébastien Ogier", "detalle": "Considerado el heredero natural de Loeb, cosechó 8 títulos mundiales corriendo para Volkswagen, Ford y Toyota con una destreza táctica insuperable.", "imagen": "/img/pilotos/wrc_ogier.jpg" },
+      { "nombre": "Carlos Sainz", "detalle": "Conocido como 'El Matador'. Dos veces campeón del mundo y pionero en la profesionalización obsesiva del desarrollo y ajuste de los autos de rally.", "imagen": "/img/pilotos/wrc_sainz.avif" }
     ],
     "equipos": [
-      { "nombre": "Toyota Gazoo Racing", "detalle": "Dominadores actuales con múltiples campeonatos mundiales de constructores.", "imagen": "/img/equipos/toyotawrc.jpg" },
-      { "nombre": "Hyundai Shell Mobis", "detalle": "Principal rival de la era moderna y campeones en 2019 y 2020.", "imagen": "/img/equipos/hyundai.jpg" },
-      { "nombre": "M-Sport Ford", "detalle": "El equipo histórico británico aliado con Ford, creadores de autos legendarios.", "imagen": "/img/equipos/msport.jpg" }
+      { "nombre": "Lancia", "detalle": "La marca más gloriosa de los primeros años. Ganaron 10 títulos de constructores creando joyas como el Stratos y el Delta Integrale." },
+      { "nombre": "Subaru World Rally Team", "detalle": "El icónico equipo azul y dorado que de la mano de Colin McRae y Petter Solberg se volvió un ícono de la cultura pop en los años 90." },
+      { "nombre": "Toyota Gazoo Racing", "detalle": "Retornaron al WRC en 2017 para establecer una era de dominación implacable, creando el temible Yaris WRC." },
+      { "nombre": "Hyundai Shell Mobis", "detalle": "Principal fuerza contendiente en la era moderna, inyectando enormes presupuestos para cazar la corona mundial desde Corea." },
+      { "nombre": "M-Sport Ford", "detalle": "Estructura privada británica dirigida por Malcolm Wilson, responsables de mantener el óvalo azul peleando al más alto nivel." }
     ],
     "temporadas": [
       { "anio": "1973", "descripcion": "Temporada inaugural del WRC; Alpine-Renault se lleva el primer título de constructores." },
-      { "anio": "1982", "descripcion": "Nacimiento del peligroso Grupo B y dominio del Audi Quattro de tracción total." },
-      { "anio": "1986", "descripcion": "Accidente fatal de Henri Toivonen en Córcega provoca la prohibición inmediata del Grupo B." },
-      { "anio": "1997", "descripcion": "Implementación de las reglas World Rally Car (WRC), acercando los autos a la producción masiva." },
+      { "anio": "1982", "descripcion": "Nacimiento del Grupo B y dominio del Audi Quattro de tracción total." },
+      { "anio": "1986", "descripcion": "Accidente fatal de Henri Toivonen en Córcega provoca la prohibición inmediata de los potentes autos del Grupo B." },
+      { "anio": "1990", "descripcion": "Carlos Sainz se convierte en el primer piloto latino/español en ganar el campeonato mundial de rally." },
+      { "anio": "1997", "descripcion": "Implementación de las reglas World Rally Car (WRC), democratizando el deporte y bajando costos de producción." },
+      { "anio": "2001", "descripcion": "Sébastien Loeb irrumpe en la escena con Citroën, anunciando la llegada del piloto más dominante de la historia." },
       { "anio": "2004", "descripcion": "Sébastien Loeb gana su primer campeonato, iniciando una dictadura de 9 años seguidos." },
       { "anio": "2022", "descripcion": "Transición a la era híbrida con el espectacular y ecológico reglamento Rally1." }
     ]
@@ -144,39 +162,45 @@
     "audio": "/audio/nascar.mp3",
     "audio_historia": "/audio/nascar_historia.mp3",
     "historia": [
-      "Las raíces de NASCAR son folclóricas: provienen de la época de la Prohibición de alcohol en Estados Unidos. Los contrabandistas modificaban sus autos de serie para escapar de la policía por caminos rurales de tierra. Cuando la prohibición terminó, estos conductores comenzaron a correr por orgullo y apuestas.",
-      "En 1948, Bill France Sr. reunió a promotores y pilotos para formalizar las reglas, fundando la National Association for Stock Car Auto Racing (NASCAR). Al principio, los autos debían ser literalmente 'de fábrica' (stock), sin modificaciones extremas.",
-      "NASCAR explotó en popularidad en 1979 cuando la carrera de las 500 Millas de Daytona se transmitió en vivo por televisión nacional de principio a fin, culminando con una famosa pelea a puñetazos en el barro entre los pilotos Cale Yarborough y los hermanos Allison.",
-      "En el siglo XXI, el deporte priorizó la seguridad tras la trágica muerte del ídolo Dale Earnhardt en 2001. Hoy, el revolucionario 'Next Gen Car' introducido en 2022 ha igualado el campo de juego, devolviendo el énfasis a la habilidad del piloto en los súper óvalos."
+      "Las raíces de NASCAR provienen de la época de la Prohibición de alcohol en Estados Unidos. Los contrabandistas modificaban sus autos de serie para escapar de la policía por caminos de tierra.",
+      "En 1948, Bill France Sr. formalizó las reglas y fundó NASCAR. Al principio, los autos debían ser literalmente 'de fábrica' (stock), compitiendo en playas y pistas de tierra rústicas.",
+      "NASCAR explotó en popularidad en 1979 cuando las 500 Millas de Daytona se transmitieron en vivo por televisión, culminando con una famosa pelea a puñetazos en el barro entre los pilotos.",
+      "En el siglo XXI, el deporte priorizó la seguridad tras la muerte del ídolo Dale Earnhardt. Hoy, el 'Next Gen Car' introducido en 2022 ha igualado el campo de juego aerodinámico."
     ],
     "historiaImagenes": [
-      { "src": "/img/nascar_historia1.jpg", "alt": "Carreras en la playa de Daytona en los 50s" },
+      { "src": "/img/nascar_historia1.webp", "alt": "Carreras en la playa de Daytona en los 50s" },
       { "src": "/img/nascar_historia2.jpg", "alt": "Pelea televisada en Daytona 1979" },
       { "src": "/img/nascar_historia3.jpg", "alt": "Pelotón de autos en Talladega" }
     ],
     "stats": [
       { "label": "Velocidad Max", "valor": "320+", "unidad": "km/h" },
       { "label": "Potencia", "valor": "670", "unidad": "HP" },
+      { "label": "Inclinación Máx", "valor": "33°", "unidad": "(Peralte en Talladega)" },
+      { "label": "Pit Stops", "valor": "10-12", "unidad": "Segundos (Cambio de 4 llantas y gas)" },
       { "label": "Peso", "valor": "1500", "unidad": "kg" },
-      { "label": "Parrilla", "valor": "40", "unidad": "autos por carrera" }
+      { "label": "Parrilla", "valor": "40", "unidad": "autos a pulgadas de distancia" }
     ],
     "pilotos": [
-      { "nombre": "Richard Petty", "detalle": "'El Rey', 7 veces campeón y ostenta el récord irrompible de 200 victorias.", "imagen": "/img/pilotos/petty.jpg" },
-      { "nombre": "Dale Earnhardt", "detalle": "'El Intimidador', 7 veces campeón y figura cultural gigante del automovilismo americano.", "imagen": "/img/pilotos/earnhardt.jpg" },
-      { "nombre": "Jimmie Johnson", "detalle": "El rey moderno; 7 veces campeón, logrando la asombrosa hazaña de 5 títulos seguidos.", "imagen": "/img/pilotos/johnson.jpg" }
+      { "nombre": "Richard Petty", "detalle": "Conocido simplemente como 'El Rey'. Ostenta récords que nunca serán rotos: 7 campeonatos y unas absurdas 200 victorias en la categoría principal.", "imagen": "/img/pilotos/nascar_petty.webp" },
+      { "nombre": "Dale Earnhardt", "detalle": "Apodado 'El Intimidador'. Figura cultural enorme, ganó 7 campeonatos corriendo con agresividad extrema. Su trágica muerte en 2001 revolucionó la seguridad del deporte.", "imagen": "/img/pilotos/nascar_earnhardt.jpg" },
+      { "nombre": "Jimmie Johnson", "detalle": "El dominador de la era moderna. Logró sus 7 títulos enfrentando los playoffs más duros, incluyendo un asombroso récord de 5 campeonatos consecutivos.", "imagen": "/img/pilotos/nascar_johnson.webp" }
     ],
     "equipos": [
-      { "nombre": "Hendrick Motorsports", "detalle": "El equipo más ganador de la historia con 14 campeonatos de la Cup Series.", "imagen": "/img/equipos/hendrick.jpg" },
-      { "nombre": "Joe Gibbs Racing", "detalle": "Potencia impulsada por Toyota y fundada por el ex entrenador de la NFL Joe Gibbs.", "imagen": "/img/equipos/joegibbs.jpg" },
-      { "nombre": "Team Penske", "detalle": "El equipo del 'Capitán' Roger Penske, dominantes con Ford en la era moderna.", "imagen": "/img/equipos/penske_nascar.jpg" }
+      { "nombre": "Hendrick Motorsports", "detalle": "El imperio de Rick Hendrick. Es la organización con más campeonatos (14) y más victorias en la historia de la Cup Series." },
+      { "nombre": "Joe Gibbs Racing", "detalle": "Fundado por el entrenador campeón del Super Bowl, Joe Gibbs. Es la punta de lanza de la marca Toyota en el deporte." },
+      { "nombre": "Team Penske", "detalle": "El equipo del multimillonario Roger Penske. Ganadores constantes y grandes defensores del honor de la marca Ford." },
+      { "nombre": "Richard Childress Racing", "detalle": "Equipo legendario e histórico que hizo famosa la icónica camioneta Chevrolet negra número 3 de Dale Earnhardt." },
+      { "nombre": "Stewart-Haas Racing", "detalle": "Asociación entre el magnate Gene Haas y el tricampeón Tony Stewart, logrando campeonatos a pura fuerza y agresividad." }
     ],
     "temporadas": [
-      { "anio": "1948", "descripcion": "Fundación oficial de NASCAR por Bill France Sr." },
-      { "anio": "1959", "descripcion": "Apertura del gigantesco Daytona International Speedway." },
-      { "anio": "1979", "descripcion": "Primera Daytona 500 televisada en vivo, que catapultó el deporte a nivel nacional." },
-      { "anio": "2001", "descripcion": "Trágica muerte de Dale Earnhardt en la última curva de Daytona, revolucionando la seguridad (HANS device)." },
-      { "anio": "2004", "descripcion": "Introducción del formato de 'Playoffs' (The Chase), cambiando la forma de definir al campeón." },
-      { "anio": "2022", "descripcion": "Debut del 'Next Gen Car', el salto tecnológico más radical en la historia de la categoría." }
+      { "anio": "1948", "descripcion": "Fundación oficial de NASCAR por Bill France Sr. en un hotel de Florida." },
+      { "anio": "1959", "descripcion": "Apertura del gigantesco Daytona International Speedway, sacando a los autos de la playa y metiéndolos al pavimento." },
+      { "anio": "1979", "descripcion": "Primera Daytona 500 televisada en vivo, que catapultó el deporte a nivel nacional por la pelea final entre Cale Yarborough y los hermanos Allison." },
+      { "anio": "1998", "descripcion": "Tras 20 años de frustración, el héroe local Dale Earnhardt finalmente logra ganar las 500 Millas de Daytona." },
+      { "anio": "2001", "descripcion": "Trágica muerte de Dale Earnhardt en la última curva de Daytona, revolucionando la seguridad (implementación del HANS device)." },
+      { "anio": "2004", "descripcion": "Introducción del formato de 'Playoffs' (The Chase), cambiando para siempre la forma en la que se define al campeón de automovilismo." },
+      { "anio": "2014", "descripcion": "Se instaura el formato de eliminación de Playoffs, forzando a los pilotos a ganar para avanzar de ronda." },
+      { "anio": "2022", "descripcion": "Debut del 'Next Gen Car', el salto tecnológico más radical con partes estandarizadas y llantas de tuerca central." }
     ]
   },
   {
@@ -189,39 +213,45 @@
     "audio": "/audio/indycar.mp3",
     "audio_historia": "/audio/indycar_historia.mp3",
     "historia": [
-      "Las raíces del campeonato de monoplazas estadounidense ('IndyCar') datan de 1905, organizadas originalmente por la AAA y luego por el USAC. Su identidad está unida eternamente a su carrera principal, las 500 Millas de Indianápolis, celebradas desde 1911 en el gigantesco 'Brickyard'.",
-      "El deporte vivió una explosión tecnológica y de popularidad en los años 80 y 90 bajo el organismo CART, atrayendo a expilotos de Fórmula 1 y desarrollando máquinas increíblemente rápidas que rozaban los 400 km/h en súper óvalos.",
-      "Desafortunadamente, la política provocó el infame 'Split' en 1996, cuando Tony George creó la Indy Racing League (IRL) para competir contra CART. Esta división de 12 años fracturó la base de fans y permitió que NASCAR tomara el trono del automovilismo en Estados Unidos.",
-      "Ambas series finalmente se reunificaron en 2008 bajo el actual nombre 'IndyCar Series'. Hoy es celebrada como una de las categorías más competitivas del mundo, donde un chasis estándar (Dallara) y motores emparejados permiten que decenas de pilotos luchen genuinamente por la victoria en óvalos, callejeros y autódromos."
+      "Las raíces del campeonato de monoplazas estadounidense datan de 1905. Su identidad está unida eternamente a las 500 Millas de Indianápolis, celebradas desde 1911 en el gigantesco 'Brickyard'.",
+      "El deporte vivió una explosión tecnológica y de popularidad en los años 80 y 90 bajo el organismo CART, atrayendo a expilotos de Fórmula 1 y desarrollando máquinas increíblemente rápidas en súper óvalos.",
+      "Desafortunadamente, la política provocó el infame 'Split' en 1996, cuando Tony George creó la Indy Racing League (IRL) para competir contra CART. Esta división de 12 años fracturó gravemente la base de fans.",
+      "Ambas series finalmente se reunificaron en 2008 bajo el nombre 'IndyCar Series'. Hoy es celebrada como una categoría pura, donde un chasis estándar y motores emparejados permiten alta competitividad."
     ],
     "historiaImagenes": [
-      { "src": "/img/indy_historia1.jpg", "alt": "Salida histórica de la Indy 500 en los años 20" },
+      { "src": "/img/indy_historia1.webp", "alt": "Salida histórica de la Indy 500 en los años 20" },
       { "src": "/img/indy_historia2.jpg", "alt": "Era dorada de CART en los años 90" },
-      { "src": "/img/indy_historia3.jpg", "alt": "Autos modernos en formación de 3 en Indianápolis" }
+      { "src": "/img/indy_historia3.webp", "alt": "Autos modernos en formación en Indianápolis" }
     ],
     "stats": [
       { "label": "Velocidad Max", "valor": "380", "unidad": "km/h (Óvalos)" },
       { "label": "Aceleración", "valor": "2.8", "unidad": "s (0-100)" },
+      { "label": "Fuerza G", "valor": "5G", "unidad": "Sostenidos en curvas peraltadas" },
+      { "label": "Combustible", "valor": "E85", "unidad": "Etanol 100% renovable" },
       { "label": "Potencia", "valor": "700+", "unidad": "HP" },
-      { "label": "Chasis", "valor": "1", "unidad": "Dallara estándar" }
+      { "label": "Chasis", "valor": "1", "unidad": "Dallara estandarizado para todos" }
     ],
     "pilotos": [
-      { "nombre": "A.J. Foyt", "detalle": "Leyenda absoluta estadounidense, primer piloto en la historia en ganar cuatro Indy 500.", "imagen": "/img/pilotos/foyt.jpg" },
-      { "nombre": "Scott Dixon", "detalle": "El 'Iceman' neozelandés, 6 veces campeón y estadísticamente el mejor de la era moderna.", "imagen": "/img/pilotos/dixon.jpg" },
-      { "nombre": "Álex Palou", "detalle": "Estrella española, tricampeón dominante de la categoría en sus primeros cinco años.", "imagen": "/img/pilotos/palou.jpg" }
+      { "nombre": "A.J. Foyt", "detalle": "El piloto más recio de América. Fue el primero en la historia en ganar cuatro veces las 500 Millas de Indianápolis y acumuló 67 victorias absolutas.", "imagen": "/img/pilotos/indy_foyt.jpg" },
+      { "nombre": "Scott Dixon", "detalle": "Apodado el 'Hombre de Hielo'. 6 veces campeón de la serie, destacando por su inteligencia estratégica suprema para ahorrar combustible y ganar.", "imagen": "/img/pilotos/indy_dixon.jpg" },
+      { "nombre": "Álex Palou", "detalle": "Joven prodigio español. Dominó a la élite estadounidense ganando tres campeonatos en un lapso de cinco años con una conducción libre de errores.", "imagen": "/img/pilotos/indy_palou.jpg" }
     ],
     "equipos": [
-      { "nombre": "Chip Ganassi Racing", "detalle": "Equipo icónico y dominador de la era moderna con múltiples campeonatos.", "imagen": "/img/equipos/ganassi.jpg" },
-      { "nombre": "Team Penske", "detalle": "La estructura más exitosa en la historia de las 500 Millas de Indianápolis.", "imagen": "/img/equipos/penske_indy.jpg" },
-      { "nombre": "Andretti Global", "detalle": "El legado de Mario Andretti sigue vivo en uno de los equipos más populares.", "imagen": "/img/equipos/andretti.jpg" }
+      { "nombre": "Chip Ganassi Racing", "detalle": "Sinónimo de excelencia ganadora, hogar de las más grandes leyendas modernas de la categoría con múltiples títulos en su haber." },
+      { "nombre": "Team Penske", "detalle": "El equipo de 'El Capitán' Roger Penske (dueño actual de la serie y del circuito de Indianápolis). Ostentan el récord con casi 20 victorias en la Indy 500." },
+      { "nombre": "Andretti Global", "detalle": "El imperio de carreras fundado por Michael Andretti, manteniendo vivo uno de los apellidos más icónicos del automovilismo mundial." },
+      { "nombre": "Arrow McLaren", "detalle": "La rama americana del gigante británico de la F1, inyectando color papaya, presupuesto masivo y mentalidad europea al certamen." },
+      { "nombre": "Rahal Letterman Lanigan", "detalle": "Equipo icónico copropiedad de la leyenda Bobby Rahal y el presentador de televisión David Letterman." }
     ],
     "temporadas": [
-      { "anio": "1911", "descripcion": "Se celebra la primera edición de las 500 Millas de Indianápolis (ganada por Ray Harroun)." },
-      { "anio": "1979", "descripcion": "Formación de CART, iniciando la era dorada técnica del deporte." },
-      { "anio": "1996", "descripcion": "Inicia 'El Split' (La División) entre CART y la IRL de Tony George, dañando el deporte." },
-      { "anio": "2008", "descripcion": "Milagrosa reunificación de ambas series, formando la actual IndyCar." },
-      { "anio": "2012", "descripcion": "Introducción del chasis Dallara DW12, nombrado en honor a Dan Wheldon." },
-      { "anio": "2020", "descripcion": "Implementación del 'Aeroscreen' de titanio y policarbonato, revolucionando la protección del piloto." }
+      { "anio": "1911", "descripcion": "Se celebra la primera edición de las 500 Millas de Indianápolis (ganada por Ray Harroun y su invento: el espejo retrovisor)." },
+      { "anio": "1979", "descripcion": "Formación de CART, iniciando la era dorada técnica y comercial de los monoplazas americanos." },
+      { "anio": "1989", "descripcion": "El bicampeón de F1 Emerson Fittipaldi cruza el charco y gana la Indy 500 tras un choque en la última vuelta con Al Unser Jr." },
+      { "anio": "1996", "descripcion": "Inicia 'El Split' (La División) entre CART y la IRL, una guerra política que destruyó la enorme popularidad del deporte." },
+      { "anio": "2008", "descripcion": "Milagrosa reunificación de ambas series, formando la actual IndyCar tras el colapso financiero de Champ Car." },
+      { "anio": "2012", "descripcion": "Introducción del nuevo chasis Dallara DW12, nombrado en honor póstumo al campeón Dan Wheldon." },
+      { "anio": "2016", "descripcion": "Se celebra la épica y multitudinaria edición N° 100 de las 500 Millas de Indianápolis con un novato (Alexander Rossi) ganando sin gasolina." },
+      { "anio": "2020", "descripcion": "Implementación del 'Aeroscreen' de titanio blindado, revolucionando la protección facial del piloto." }
     ]
   },
   {
@@ -234,39 +264,45 @@
     "audio": "/audio/dakar.mp3",
     "audio_historia": "/audio/dakar_historia.mp3",
     "historia": [
-      "El Rally Dakar nació de una experiencia de supervivencia. En 1977, el piloto francés Thierry Sabine se perdió en el desierto del Teneré durante el Rally Abiyán-Niza. Salvado de milagro, decidió que ese inhóspito paisaje sería el escenario de la competencia más dura del mundo. La primera edición arrancó en 1979 conectando París con Dakar (Senegal).",
-      "Durante casi tres décadas, la carrera atravesó los desiertos del Sahara y África occidental, forjando leyendas de resistencia pero cobrando la vida de decenas de competidores, incluyendo al propio Sabine en un accidente de helicóptero en 1986.",
-      "En 2008, la carrera fue cancelada un día antes del inicio debido a serias amenazas de grupos terroristas en Mauritania. Para salvar el evento, la organización mudó toda la competencia a Sudamérica (2009-2019), donde cruzaron la Cordillera de los Andes y el terrible desierto de Atacama con un éxito de público masivo.",
-      "En 2020, buscando volver a sus raíces de vastos desiertos desolados, el rally inició su 'Capítulo 3' moviéndose a Arabia Saudita. Hoy incluye múltiples categorías: motos, quads, autos, camiones y los ligeros SSV."
+      "El Rally Dakar nació cuando el piloto Thierry Sabine se perdió en el desierto del Teneré en 1977. Salvado de milagro, decidió que ese inhóspito paisaje sería el escenario de la competencia más dura del mundo. La primera edición arrancó en 1979.",
+      "Durante casi tres décadas, la carrera atravesó los desiertos del Sahara y África occidental, forjando leyendas de resistencia pero cobrando la vida de decenas de competidores.",
+      "En 2008, la carrera fue cancelada por amenazas de grupos terroristas en Mauritania. Para salvar el evento, la organización mudó la competencia a Sudamérica (2009-2019), cruzando la Cordillera de los Andes con un éxito rotundo.",
+      "En 2020, el rally inició su 'Capítulo 3' moviéndose a Arabia Saudita, volviendo a sus raíces de vastos desiertos y dunas gigantescas."
     ],
     "historiaImagenes": [
-      { "src": "/img/dakar_historia1.jpg", "alt": "Motos clásicas en el desierto del Sahara" },
+      { "src": "/img/dakar_historia1.webp", "alt": "Motos clásicas en el desierto del Sahara" },
       { "src": "/img/dakar_historia2.jpg", "alt": "Espectadores en Sudamérica (Argentina)" },
-      { "src": "/img/dakar_historia3.jpg", "alt": "Camiones volando sobre las dunas sauditas" }
+      { "src": "/img/dakar_historia3.jpeg", "alt": "Camiones volando sobre las dunas sauditas" }
     ],
     "stats": [
       { "label": "Distancia", "valor": "8000+", "unidad": "km" },
       { "label": "Duración", "valor": "14", "unidad": "Días" },
+      { "label": "Navegación", "valor": "GPS Oculto", "unidad": "Solo roadbook digital" },
+      { "label": "Clima", "valor": "-5° a 50°", "unidad": "Grados centígrados de amplitud" },
       { "label": "Participantes", "valor": "500+", "unidad": "Vehículos" },
       { "label": "Clases", "valor": "5", "unidad": "Motos, Quads, Autos, SSV, Camiones" }
     ],
     "pilotos": [
-      { "nombre": "Stéphane Peterhansel", "detalle": "'Monsieur Dakar', récord absoluto con 14 victorias (6 en motos, 8 en autos).", "imagen": "/img/pilotos/peterhansel.jpg" },
-      { "nombre": "Carlos Sainz", "detalle": "4 victorias absolutas, legendario desarrollador logrando ganar con 4 marcas distintas.", "imagen": "/img/pilotos/sainz_dakar.jpg" },
-      { "nombre": "Nasser Al-Attiyah", "detalle": "Príncipe catarí, tirador olímpico y maestro absoluto de las dunas con 5 victorias.", "imagen": "/img/pilotos/alattiyah.jpg" }
+      { "nombre": "Stéphane Peterhansel", "detalle": "El 'Monsieur Dakar'. Posee un récord divino e irrompible de 14 victorias absolutas repartidas magistralmente entre motocicletas y autos.", "imagen": "/img/pilotos/dakar_peterhansel.jpg" },
+      { "nombre": "Carlos Sainz", "detalle": "El incansable 'Matador' español, ha logrado ganar esta agotadora prueba en cuatro ocasiones, lográndolo con 4 marcas automotrices diferentes.", "imagen": "/img/pilotos/dakar_sainz.jpg" },
+      { "nombre": "Nasser Al-Attiyah", "detalle": "Un príncipe catarí que divide su vida entre ser tirador olímpico medallista y el mejor surfista de dunas del mundo en autos, con 5 victorias.", "imagen": "/img/pilotos/dakar_attiyah.jpg" }
     ],
     "equipos": [
-      { "nombre": "Team Audi Sport", "detalle": "Hicieron historia en 2024 al ganar el rally con un prototipo de propulsión eléctrica.", "imagen": "/img/equipos/audi_dakar.jpg" },
-      { "nombre": "Toyota Gazoo Racing", "detalle": "Dominadores recientes del Dakar gracias a la robustez indestructible de la Hilux.", "imagen": "/img/equipos/toyota_dakar.jpg" },
-      { "nombre": "X-Raid Mini", "detalle": "El equipo privado que dominó la era sudamericana con sus buggies y 4x4.", "imagen": "/img/equipos/xraid.jpg" }
+      { "nombre": "Team Audi Sport", "detalle": "Revolucionaron la prueba ganando el trofeo general con el sofisticado RS Q e-tron de tracción eléctrica y generador de gasolina." },
+      { "nombre": "Toyota Gazoo Racing", "detalle": "La referencia de fiabilidad en el desierto. La indestructible pick-up Hilux T1+ es el arma a elegir para cruzar las dunas." },
+      { "nombre": "X-Raid Mini", "detalle": "Los amos de la era sudamericana, construyendo los buggies y 4x4 más eficaces y ganadores de los años 2010s." },
+      { "nombre": "KTM Factory Racing", "detalle": "Una auténtica dictadura de dos ruedas. Mantuvieron un invicto irreal ganando la categoría de motos durante 18 años consecutivos." },
+      { "nombre": "Kamaz Master", "detalle": "La invencible 'Armada Azul' rusa. Fabricantes de los camiones de 10 toneladas que saltan dunas como si fueran motocicletas ágiles." }
     ],
     "temporadas": [
       { "anio": "1979", "descripcion": "Inicia la leyenda: primera edición conectando París (Francia) con Dakar (Senegal)." },
-      { "anio": "1986", "descripcion": "Trágico año donde fallece el fundador Thierry Sabine en un accidente de helicóptero por una tormenta de arena." },
-      { "anio": "2001", "descripcion": "Jutta Kleinschmidt hace historia como la primera mujer en ganar el Rally Dakar en la categoría general." },
-      { "anio": "2008", "descripcion": "Cancelación total del evento a 24 horas de la salida por terrorismo." },
-      { "anio": "2009", "descripcion": "El renacer sudamericano: el Rally se disputa en Argentina y Chile." },
-      { "anio": "2020", "descripcion": "Inicia el Capítulo 3: Llegada a los inmensos desiertos de Arabia Saudita." }
+      { "anio": "1986", "descripcion": "Trágico año donde fallece el fundador Thierry Sabine en un accidente de helicóptero atrapado en una tormenta de arena." },
+      { "anio": "2001", "descripcion": "Jutta Kleinschmidt hace historia grande al convertirse en la primera mujer en ganar el Rally Dakar en la clasificación general absoluta." },
+      { "anio": "2008", "descripcion": "Cancelación total del evento a 24 horas de la salida por amenazas de la red terrorista Al-Qaeda." },
+      { "anio": "2009", "descripcion": "El renacer sudamericano: el Rally escapa de África y se disputa en los traicioneros terrenos de Argentina y Chile." },
+      { "anio": "2012", "descripcion": "El equipo X-Raid Mini logra su primera victoria, iniciando un dominio inquebrantable en Sudamérica." },
+      { "anio": "2020", "descripcion": "Inicia el Capítulo 3: El rally se traslada a los inmensos y desolados desiertos de Arabia Saudita." },
+      { "anio": "2024", "descripcion": "Audi gana la carrera por primera vez utilizando propulsión eléctrica en las 4 ruedas." }
     ]
   },
   {
@@ -279,37 +315,43 @@
     "audio": "/audio/fe.mp3",
     "audio_historia": "/audio/fe_historia.mp3",
     "historia": [
-      "La idea de un campeonato de monoplazas 100% eléctricos fue concebida en 2011 durante una cena en París entre el entonces presidente de la FIA, Jean Todt, y el empresario Alejandro Agag. El objetivo era demostrar el potencial de la movilidad sostenible y combatir el cambio climático.",
-      "La temporada inaugural arrancó en 2014 en Beijing. Durante la era 'Gen1', las baterías no tenían capacidad para completar la carrera entera, por lo que los pilotos debían entrar a boxes y literalmente saltar a un segundo auto cargado para terminar.",
-      "Con la introducción del auto 'Gen2' en 2018, la tecnología de baterías dio un salto monumental, permitiendo completar la distancia completa sin cambiar de auto. Esto atrajo a gigantes de la industria automotriz como Porsche, BMW, Audi, Mercedes y Jaguar, quienes usaron la serie como laboratorio para sus autos de calle.",
-      "Hoy, con el revolucionario vehículo 'Gen3', la Fórmula E cuenta con estatus de Campeonato Mundial de la FIA. Los autos no tienen frenos traseros tradicionales, logrando detenerse casi exclusivamente mediante la regeneración extrema de los motores eléctricos."
+      "La idea de un campeonato 100% eléctrico fue concebida en 2011 durante una cena en París entre el presidente de la FIA y Alejandro Agag. El objetivo era demostrar el potencial de la movilidad sostenible.",
+      "La temporada inaugural arrancó en 2014. Durante la era 'Gen1', las baterías no tenían capacidad para la carrera entera, obligando a los pilotos a entrar a boxes y saltar a un segundo auto cargado.",
+      "Con la introducción del auto 'Gen2' en 2018, la tecnología de baterías dio un salto monumental, permitiendo completar la distancia sin paradas. Esto atrajo como un imán a la élite de los fabricantes globales.",
+      "Hoy, con el revolucionario vehículo 'Gen3', la serie goza de estatus de Campeonato Mundial. Los autos ni siquiera cuentan con frenos traseros tradicionales, deteniéndose mediante la regeneración de sus motores eléctricos."
     ],
     "historiaImagenes": [
-      { "src": "/img/fe_historia1.jpg", "alt": "Primer auto Gen1 en Beijing" },
+      { "src": "/img/fe_historia1.jpeg", "alt": "Primer auto Gen1 en Beijing" },
       { "src": "/img/fe_historia2.jpg", "alt": "Auto Gen2 tipo 'Batmovil'" },
-      { "src": "/img/fe_historia3.jpg", "alt": "Carrera callejera en el centro urbano" }
+      { "src": "/img/fe_historia3.jpeg", "alt": "Carrera callejera en el centro urbano" }
     ],
     "stats": [
       { "label": "Velocidad Max", "valor": "322", "unidad": "km/h" },
       { "label": "Aceleración", "valor": "2.8", "unidad": "s (0-100)" },
       { "label": "Potencia", "valor": "350", "unidad": "kW" },
-      { "label": "Regeneración", "valor": "600", "unidad": "kW (Frenado)" }
+      { "label": "Regeneración", "valor": "600", "unidad": "kW (Frenado)" },
+      { "label": "Neumáticos", "valor": "2 Juegos", "unidad": "Diseño estriado para lluvia/seco" },
+      { "label": "Ruido Emitido", "valor": "80", "unidad": "Decibeles (Zumbido agudo)" }
     ],
     "pilotos": [
-      { "nombre": "Jean-Éric Vergne", "detalle": "Ex piloto de F1 y el único piloto en la historia en ser bicampeón de Fórmula E.", "imagen": "/img/pilotos/vergne.jpg" },
-      { "nombre": "Sébastien Buemi", "detalle": "Campeón en la segunda temporada y poseedor de múltiples récords de victorias.", "imagen": "/img/pilotos/buemi.jpg" },
-      { "nombre": "Lucas di Grassi", "detalle": "Pionero absoluto, ayudó a desarrollar el primer auto, ganó la primera carrera y es campeón de la serie.", "imagen": "/img/pilotos/digrassi.jpg" }
+      { "nombre": "Jean-Éric Vergne", "detalle": "Expiloto de F1 que encontró su paraíso aquí, convirtiéndose en el único en la historia en encadenar un bicampeonato en Fórmula E.", "imagen": "/img/pilotos/fe_vergne.jpg" },
+      { "nombre": "Sébastien Buemi", "detalle": "Campeón y eterno protagonista de la categoría desde el primer día, poseedor de la inmensa mayoría de récords estadísticos de victorias.", "imagen": "/img/pilotos/fe_buemi.webp" },
+      { "nombre": "Lucas di Grassi", "detalle": "El piloto laboratorio. Ayudó en secreto a desarrollar y probar el auto Gen1, ganó la primera carrera histórica en Beijing y logró su propio título.", "imagen": "/img/pilotos/fe_grassi.jpg" }
     ],
     "equipos": [
-      { "nombre": "Jaguar TCS Racing", "detalle": "Equipo líder en la era moderna, combinando alta eficiencia y velocidad.", "imagen": "/img/equipos/jaguar.jpg" },
-      { "nombre": "TAG Heuer Porsche", "detalle": "El gigante alemán, dominador reciente usando su avanzada tecnología eléctrica.", "imagen": "/img/equipos/porsche_fe.jpg" },
-      { "nombre": "Andretti Formula E", "detalle": "Equipo histórico americano, campeones del mundo en la era Gen3.", "imagen": "/img/equipos/andretti_fe.jpg" }
+      { "nombre": "Jaguar TCS Racing", "detalle": "La icónica marca británica que ha liderado el ritmo en la era moderna, creando los trenes motrices más eficientes del paddock." },
+      { "nombre": "TAG Heuer Porsche", "detalle": "Llegaron con el músculo tecnológico alemán y dominaron la gestión de software y regeneración en la compleja era Gen3." },
+      { "nombre": "Andretti Formula E", "detalle": "Estructura legendaria estadounidense que se alió de forma inteligente con proveedores de motores líderes para ganar campeonatos." },
+      { "nombre": "DS Penske", "detalle": "Unión del gigante francés automotriz (DS) y la histórica escuadra de Jay Penske, acumulando múltiples coronas en el camino." },
+      { "nombre": "Nissan Formula E Team", "detalle": "Herederos de la dominante estructura e.dams de Renault, liderando la ofensiva japonesa en la electrificación." }
     ],
     "temporadas": [
-      { "anio": "2014", "descripcion": "Primera carrera de la historia alrededor del Parque Olímpico del 'Nido de Pájaro' en Beijing." },
-      { "anio": "2018", "descripcion": "Lanzamiento del auto Gen2, marcando el fin de los cambios mecánicos de auto a mitad de carrera." },
-      { "anio": "2020", "descripcion": "La FIA le otorga a la Fórmula E el prestigioso estatus oficial de 'Campeonato Mundial'." },
-      { "anio": "2023", "descripcion": "Debut del espectacular vehículo Gen3, un diseño radical enfocado en la regeneración extrema." }
+      { "anio": "2014", "descripcion": "Primera carrera de la historia disputada alrededor del Parque Olímpico del 'Nido de Pájaro' en Beijing." },
+      { "anio": "2015", "descripcion": "Nelson Piquet Jr. se consagra como el primer campeón del certamen superando a Buemi por apenas 1 punto en Londres." },
+      { "anio": "2018", "descripcion": "Lanzamiento del auto Gen2, marcando el fin oficial de la extraña regla de tener que cambiar de auto a mitad de carrera." },
+      { "anio": "2020", "descripcion": "La FIA le otorga a la Fórmula E el prestigioso estatus oficial de 'Campeonato Mundial', elevando su prestigio global." },
+      { "anio": "2021", "descripcion": "Nyck de Vries gana el campeonato del mundo más apretado en una caótica carrera final en el aeropuerto de Tempelhof, Berlín." },
+      { "anio": "2023", "descripcion": "Debut del vehículo Gen3, un diseño radical en forma de jet de combate enfocado en regenerar el 40% de la energía de la carrera." }
     ]
   },
   {
@@ -322,38 +364,44 @@
     "audio": "/audio/dtm.mp3",
     "audio_historia": "/audio/dtm_historia.mp3",
     "historia": [
-      "El Deutsche Tourenwagen Meisterschaft original (DTM) nació en 1984 y rápidamente se convirtió en la serie de turismos más espectacular de Europa. Basado en el reglamento del Grupo A, vio batallas épicas entre el BMW M3, el Mercedes-Benz 190E y el Ford Sierra.",
-      "A mediados de los 90, los costos se dispararon debido al hiper-avanzado reglamento Clase 1 (con tecnología casi nivel Fórmula 1). La serie mutó al Campeonato Internacional de Turismos (ITC), el cual colapsó financieramente en 1996, dejando un vacío en el automovilismo alemán.",
-      "En el año 2000, las marcas acordaron revivir el espíritu de la serie, renombrándola como 'Deutsche Tourenwagen Masters'. Durante dos décadas, la rivalidad de fábrica entre Audi, Mercedes y BMW produjo carreras fantásticas y autos prototipo disfrazados de sedanes de lujo.",
-      "Tras la salida de Mercedes y Audi de las regulaciones Clase 1, el campeonato se reinventó en 2021 adoptando el reglamento mundial de GT3, asegurando su supervivencia y atrayendo a marcas como Ferrari, Lamborghini, Porsche y McLaren."
+      "El DTM original nació en 1984 y rápidamente se convirtió en la serie de turismos más espectacular de Europa. Vio batallas épicas a puestas de las puertas entre el BMW M3, el Mercedes-Benz 190E y el Ford Sierra RS500.",
+      "A mediados de los 90, los costos se dispararon debido al hiper-avanzado reglamento aerodinámico Clase 1. La serie mutó al Campeonato Internacional de Turismos (ITC), el cual colapsó por su insostenibilidad financiera en 1996.",
+      "En el año 2000, las marcas acordaron revivir el espíritu de la serie bajo las siglas modernas. Durante dos décadas, la rivalidad de fábrica entre las gigantes Audi, Mercedes y BMW produjo carreras de autos prototipo disfrazados de autos de calle.",
+      "Tras la progresiva salida de estas marcas oficiales por los altos costos, el campeonato se salvó en 2021 adoptando el reglamento mundial de GT3 privados, llenando la parrilla con Ferrari, Lamborghini, Porsche y McLaren."
     ],
     "historiaImagenes": [
       { "src": "/img/dtm_historia1.jpg", "alt": "BMW M3 clásico compitiendo en el DTM original" },
-      { "src": "/img/dtm_historia2.jpg", "alt": "Audi RS5 de la era Clase 1 hiper aerodinámica" },
-      { "src": "/img/dtm_historia3.jpg", "alt": "Parrilla completa de autos GT3 modernos" }
+      { "src": "/img/dtm_historia2.avif", "alt": "Audi RS5 de la era Clase 1 hiper aerodinámica" },
+      { "src": "/img/dtm_historia3.webp", "alt": "Parrilla completa de autos GT3 modernos" }
     ],
     "stats": [
       { "label": "Velocidad Max", "valor": "300", "unidad": "km/h" },
       { "label": "Potencia", "valor": "550", "unidad": "HP" },
-      { "label": "Autos", "valor": "GT3", "unidad": "Homologación FIA" },
-      { "label": "Formato", "valor": "2", "unidad": "Carreras por fin de semana" }
+      { "label": "Autos", "valor": "GT3", "unidad": "Reglamento Global de la FIA" },
+      { "label": "Neumáticos", "valor": "Pirelli", "unidad": "Compuesto DHE Estándar" },
+      { "label": "Pit Stops", "valor": "1", "unidad": "Cambio obligatorio de 4 llantas" },
+      { "label": "Formato", "valor": "2", "unidad": "Carreras Sprint por fin de semana" }
     ],
     "pilotos": [
-      { "nombre": "Bernd Schneider", "detalle": "'Mr. DTM', leyenda absoluta de Mercedes-Benz con 5 títulos en la categoría.", "imagen": "/img/pilotos/schneider.jpg" },
-      { "nombre": "René Rast", "detalle": "Tricampeón moderno, dominó la era Clase 1 tardía con la marca Audi.", "imagen": "/img/pilotos/rast.jpg" },
-      { "nombre": "Mattias Ekström", "detalle": "Bicampeón sueco, piloto polifacético famoso por su agresividad controlada.", "imagen": "/img/pilotos/ekstrom.jpg" }
+      { "nombre": "Bernd Schneider", "detalle": "Nombrado universalmente 'Mr. DTM'. El embajador eterno de Mercedes-Benz con un récord de 5 campeonatos en la época de oro.", "imagen": "/img/pilotos/dtm_schneider.jpg" },
+      { "nombre": "René Rast", "detalle": "Tricampeón de la era moderna. Su capacidad para exprimir los neumáticos y su ritmo de clasificación con Audi aniquilaron a la competencia.", "imagen": "/img/pilotos/dtm_rast.jpg" },
+      { "nombre": "Mattias Ekström", "detalle": "El rudo sueco bicampeón. Famoso por su versatilidad para saltar a otras disciplinas (como el Rallycross) y su defensa agresiva en pista.", "imagen": "/img/pilotos/dtm_ekstrom.jpg" }
     ],
     "equipos": [
-      { "nombre": "Abt Sportsline", "detalle": "El equipo privado más exitoso asociado a Audi durante décadas.", "imagen": "/img/equipos/abt.jpg" },
-      { "nombre": "Manthey EMA", "detalle": "Estructura legendaria asociada a Porsche, dominantes en la era GT3.", "imagen": "/img/equipos/manthey.jpg" },
-      { "nombre": "Schubert Motorsport", "detalle": "Equipo oficial líder representante de la marca BMW.", "imagen": "/img/equipos/schubert.jpg" }
+      { "nombre": "Abt Sportsline", "detalle": "El pilar absoluto de Audi en el campeonato, compitiendo ininterrumpidamente durante un cuarto de siglo." },
+      { "nombre": "Manthey EMA", "detalle": "La mejor estructura del mundo operando los Porsche 911, trasladando su dominio del Nürburgring a las carreras sprint del DTM." },
+      { "nombre": "Schubert Motorsport", "detalle": "Equipo oficial representante del honor de BMW, campeones de pilotos en la nueva era de autos GT3." },
+      { "nombre": "SSR Performance", "detalle": "El equipo privado que puso en alto el nombre de Lamborghini y Porsche en el certamen alemán más reñido." },
+      { "nombre": "Mercedes-AMG Team HRT", "detalle": "Estructura principal (Haupt Racing Team) encargada de defender los colores de la estrella de tres puntas." }
     ],
     "temporadas": [
-      { "anio": "1984", "descripcion": "Fundación del Campeonato Alemán de Turismos (DTM) original." },
-      { "anio": "1996", "descripcion": "Colapso del costoso campeonato ITC, poniendo fin a la primera vida de la categoría." },
-      { "anio": "2000", "descripcion": "Renacimiento de la serie bajo el nombre DTM moderno con autos silueta V8." },
-      { "anio": "2012", "descripcion": "Regreso histórico de BMW tras 20 años de ausencia, ganando el título de inmediato." },
-      { "anio": "2021", "descripcion": "Cambio radical al exitoso reglamento global de autos deportivos GT3." }
+      { "anio": "1984", "descripcion": "Fundación del Campeonato Alemán de Turismos (DTM) original, ganado por un modesto BMW 635 CSi." },
+      { "anio": "1993", "descripcion": "Alfa Romeo destroza el orgullo alemán irrumpiendo en el campeonato y ganando el título con el italiano Nicola Larini." },
+      { "anio": "1996", "descripcion": "Colapso del costosísimo campeonato ITC, poniendo fin a la primera era dorada de la categoría." },
+      { "anio": "2000", "descripcion": "Renacimiento de la serie bajo el nombre DTM moderno, atrayendo multitudes récord de vuelta a los circuitos." },
+      { "anio": "2012", "descripcion": "Regreso histórico y triunfal de BMW tras 20 años de ausencia, ganando el título en su primera temporada." },
+      { "anio": "2021", "descripcion": "Cambio obligado de rescate: se abandona el reglamento Clase 1 de prototipos por los accesibles autos deportivos GT3." },
+      { "anio": "2022", "descripcion": "Polémico final en Norisring donde órdenes de equipo de Mercedes decidieron el título frente al Ferrari de un equipo privado." }
     ]
   },
   {
@@ -366,38 +414,44 @@
     "audio": "/audio/imsa.mp3",
     "audio_historia": "/audio/imsa_historia.mp3",
     "historia": [
-      "La International Motor Sports Association (IMSA) fue fundada en 1969 por John Bishop y Bill France Sr., el mismo creador de NASCAR. Comenzó organizando carreras para autos GT y prototipos ligeros, ganando tracción rápidamente gracias a carreras legendarias como las 12 Horas de Sebring y Daytona.",
-      "La edad de oro original ocurrió en los años 80 y principios de los 90 con la era 'Camel GT' y los espectaculares prototipos GTP, donde fabricantes como Porsche, Jaguar y Nissan competían con máquinas monstruosas frente a multitudes enormes.",
-      "El deporte en EE. UU. sufrió una severa fractura a finales de los 90, dividiéndose en dos campeonatos paralelos: la American Le Mans Series (ALMS), que usaba reglas europeas, y la Grand-Am Series, de enfoque local y menor costo. Esta división debilitó la resistencia americana por 15 años.",
-      "El hito histórico se logró en 2014 con la reunificación de ambas series. Hoy, la IMSA vive su era más exitosa gracias a la clase GTP híbrida, que convergió reglas con Europa, permitiendo a fabricantes como Porsche, Cadillac, BMW y Acura competir tanto en Daytona como en Le Mans."
+      "La International Motor Sports Association (IMSA) fue fundada en 1969 por John Bishop y Bill France Sr., el mismo creador de NASCAR. Comenzó ganando tracción rápidamente gracias a legendarias pruebas de larga duración como las 12 Horas de Sebring.",
+      "La edad de oro original ocurrió en los años 80 y principios de los 90 con la era de los prototipos GTP (Grand Touring Prototype), donde Porsche, Jaguar y Nissan competían con máquinas monstruosas con potencias inauditas.",
+      "A finales de los 90, la política dividió la resistencia americana en dos: ALMS y Grand-Am. Esta absurda guerra civil de reglamentos alejó a los fanáticos durante 15 años.",
+      "El hito histórico se logró en 2014 con la reunificación de ambas series. Hoy, la IMSA vive una explosión de popularidad gracias a la clase GTP híbrida, convergiendo reglas con Europa para permitir que sus autos corran también en Le Mans."
     ],
     "historiaImagenes": [
-      { "src": "/img/imsa_historia1.jpg", "alt": "Porsche 962 en la era Camel GT" },
+      { "src": "/img/imsa_historia1.webp", "alt": "Porsche 962 en la era Camel GT" },
       { "src": "/img/imsa_historia2.jpg", "alt": "Salida nocturna de las 24 Horas de Daytona" },
       { "src": "/img/imsa_historia3.jpg", "alt": "Prototipos híbridos GTP modernos" }
     ],
     "stats": [
-      { "label": "Clase Reina", "valor": "GTP", "unidad": "(Híbridos)" },
-      { "label": "Potencia", "valor": "670", "unidad": "HP" },
-      { "label": "Carrera Larga", "valor": "24h", "unidad": "Daytona" },
-      { "label": "Carrera Corta", "valor": "100", "unidad": "Minutos" }
+      { "label": "Clases en pista", "valor": "4", "unidad": "(GTP, LMP2, GTD Pro, GTD)" },
+      { "label": "Potencia GTP", "valor": "670", "unidad": "HP (Sistemas Híbridos)" },
+      { "label": "Pilotos por auto", "valor": "3 a 4", "unidad": "En carreras de larga duración" },
+      { "label": "Joyas de la Corona", "valor": "Daytona", "unidad": "y 12 Horas de Sebring" },
+      { "label": "Carreras Cortas", "valor": "100", "unidad": "Minutos al sprint (Calles largas)" },
+      { "label": "Balance (BoP)", "valor": "Estricto", "unidad": "Para igualar rendimiento de marcas" }
     ],
     "pilotos": [
-      { "nombre": "Scott Pruett", "detalle": "Leyenda del IMSA con el récord absoluto de 60 victorias y 5 títulos en la Rolex 24.", "imagen": "/img/pilotos/pruett.jpg" },
-      { "nombre": "Ricky Taylor", "detalle": "Múltiple campeón en la máxima categoría de prototipos y especialista en clasificación.", "imagen": "/img/pilotos/taylor.jpg" },
-      { "nombre": "Pipo Derani", "detalle": "Piloto brasileño experto en resistencia, famoso por su conducción hiperagresiva.", "imagen": "/img/pilotos/derani.jpg" }
+      { "nombre": "Scott Pruett", "detalle": "Una figura que trasciende el IMSA. Dueño de un asombroso récord de 60 victorias, llevándose 5 veces a casa el codiciado reloj Rolex de Daytona.", "imagen": "/img/pilotos/imsa_pruett.avif" },
+      { "nombre": "Ricky Taylor", "detalle": "Nacido en la cuna de los prototipos bajo el ala de su padre Wayne. Es un maestro de la clasificación y de adelantar entre el agobiante tráfico de GTs.", "imagen": "/img/pilotos/imsa_taylor.webp" },
+      { "nombre": "Pipo Derani", "detalle": "Campeón brasileño hiper-agresivo y letal. Conocido por sus espectaculares y audaces movimientos en el bacheado circuito de Sebring.", "imagen": "/img/pilotos/imsa_derani.jpg" }
     ],
     "equipos": [
-      { "nombre": "Wayne Taylor Racing", "detalle": "Estructura legendaria asociada a Acura y Cadillac, ganadores múltiples en Daytona.", "imagen": "/img/equipos/wtr.jpg" },
-      { "nombre": "Action Express Racing", "detalle": "Equipo oficial de Cadillac, famosos por su implacable fiabilidad técnica.", "imagen": "/img/equipos/axr.jpg" },
-      { "nombre": "Porsche Penske", "detalle": "La alianza definitiva para correr el poderoso Porsche 963 a nivel global.", "imagen": "/img/equipos/penske_imsa.jpg" }
+      { "nombre": "Wayne Taylor Racing con Andretti", "detalle": "Una potencia absoluta en prototipos. Multiganadores de la Rolex 24, siempre contando con las formaciones de pilotos más talentosas de la red." },
+      { "nombre": "Action Express Racing", "detalle": "La espina dorsal del desarrollo del programa de Cadillac Racing, venerados por ganar campeonatos basados en una fiabilidad impenetrable." },
+      { "nombre": "Porsche Penske Motorsport", "detalle": "Una alianza que aterra al paddock. Roger Penske operando el Porsche 963 en su patio trasero es una receta histórica de títulos asegurados." },
+      { "nombre": "BMW M Team RLL", "detalle": "Bobby Rahal liderando el regreso masivo de BMW a la clase principal de la resistencia después de décadas de enfocarse solo en autos GT." },
+      { "nombre": "Vasser Sullivan", "detalle": "Los amos y señores de la división GTD corriendo bajo los neones amarillos y negros de los espectaculares vehículos Lexus." }
     ],
     "temporadas": [
-      { "anio": "1969", "descripcion": "Fundación de IMSA por John y Peggy Bishop." },
-      { "anio": "1981", "descripcion": "Creación de la legendaria categoría de prototipos cerrados GTP." },
-      { "anio": "1999", "descripcion": "Creación de la American Le Mans Series (ALMS), dividiendo las carreras deportivas en EE. UU." },
-      { "anio": "2014", "descripcion": "Reunificación histórica formando el United SportsCar Championship." },
-      { "anio": "2023", "descripcion": "Nueva era dorada con el debut global de la clase híbrida GTP en Daytona." }
+      { "anio": "1969", "descripcion": "Fundación de IMSA por John Bishop, iniciando como una serie para pequeños autos deportivos." },
+      { "anio": "1981", "descripcion": "Creación de la legendaria categoría de prototipos cerrados GTP, iniciando la era 'Camel GT'." },
+      { "anio": "1988", "descripcion": "Nissan y Geoff Brabham rompen de forma aplastante la larga dictadura invicta de los Porsche 962 en América." },
+      { "anio": "1999", "descripcion": "Creación de la American Le Mans Series (ALMS), fracturando las carreras de resistencia en Estados Unidos." },
+      { "anio": "2014", "descripcion": "Reunificación histórica e inmensamente esperada por los fans, uniendo Grand-Am y ALMS." },
+      { "anio": "2016", "descripcion": "El equipo Tequila Patrón ESM hace historia grande ganando las 24 Horas de Daytona y las 12 Horas de Sebring el mismo año." },
+      { "anio": "2023", "descripcion": "Nueva edad de plata: debut arrollador global de la clase híbrida GTP en Daytona atrayendo múltiples fábricas." }
     ]
   },
   {
@@ -410,38 +464,44 @@
     "audio": "/audio/wec.mp3",
     "audio_historia": "/audio/wec_historia.mp3",
     "historia": [
-      "El WEC moderno, relanzado en 2012, heredó el espíritu y la historia del glorioso Campeonato Mundial de Sport Prototipos que existió desde 1953 hasta 1992. Fue una respuesta directa a la necesidad de tener un certamen global organizado por la FIA alrededor de las míticas 24 Horas de Le Mans.",
-      "La década del 2010 vio la llamada 'Guerra Espacial de LMP1'. Marcas como Audi, Porsche y Toyota construyeron las máquinas híbridas de circuito más rápidas y complejas jamás hechas. Sin embargo, los inmensos presupuestos (superiores a 200 millones al año) causaron el colapso de la categoría.",
-      "Para salvar el campeonato, la FIA y el ACO anunciaron un nuevo reglamento en 2021: los 'Hypercars' (LMH y LMDh). Con regulaciones estrictas de diseño, presupuestos mucho más bajos y la posibilidad de que los autos fueran hermosos estéticamente, el campeonato resurgió.",
-      "Actualmente, el WEC vive el mejor momento de la historia de la resistencia. Marcas como Ferrari, Peugeot, Toyota, Porsche, Alpine, Cadillac y BMW compiten lado a lado en continentes como Asia, América y Europa en pruebas que duran de 6 a 24 horas."
+      "El WEC moderno, relanzado en 2012, heredó el espíritu y la historia del glorioso Campeonato Mundial de Sport Prototipos de antaño. Fue una respuesta a la necesidad de tener un certamen global organizado por la FIA alrededor de las míticas 24 Horas de Le Mans.",
+      "La década del 2010 vio la llamada 'Guerra Espacial de LMP1'. Audi, Porsche y Toyota construyeron las máquinas de circuito más tecnológicas, complejas y costosas del planeta. Sin embargo, los inmensos presupuestos (casi de nivel Fórmula 1) causaron el triste colapso de la categoría.",
+      "Para salvar el campeonato, la FIA y el ACO anunciaron un salvavidas en 2021: la clase 'Hypercar'. Este reglamento impuso estrictos límites aerodinámicos, bajó drásticamente los costos y permitió a las marcas diseñar autos que evocaran visualmente su identidad de calle.",
+      "La jugada fue un éxito sin precedentes. Hoy, el WEC vive el mejor momento de la historia de la resistencia. Ferrari, Peugeot, Toyota, Porsche, Alpine, Cadillac y BMW compiten codo a codo en circuitos de Asia, América, Europa y Medio Oriente."
     ],
     "historiaImagenes": [
-      { "src": "/img/wec_historia1.jpg", "alt": "Guerra de prototipos LMP1: Audi y Porsche" },
-      { "src": "/img/wec_historia2.jpg", "alt": "Ferrari 499P en pista" },
+      { "src": "/img/wec_historia1.avif", "alt": "Guerra tecnológica de los costosos LMP1" },
+      { "src": "/img/wec_historia2.webp", "alt": "El espectacular Ferrari 499P en pista" },
       { "src": "/img/wec_historia3.jpg", "alt": "Carrera al atardecer en Spa-Francorchamps" }
     ],
     "stats": [
-      { "label": "Clase Reina", "valor": "Hypercar", "unidad": "(LMH y LMDh)" },
-      { "label": "Potencia", "valor": "670", "unidad": "HP (Regulada)" },
-      { "label": "Carreras", "valor": "8", "unidad": "Eventos anuales" },
-      { "label": "Duración", "valor": "6h a 24h", "unidad": "Por carrera" }
+      { "label": "Categorías", "valor": "2", "unidad": "Prototipos (Hypercar) y GTs (LMGT3)" },
+      { "label": "Neumáticos", "valor": "Michelin", "unidad": "Exclusivo para la clase Hypercar" },
+      { "label": "Potencia Hypercar", "valor": "670", "unidad": "HP (Restringida por reglamento)" },
+      { "label": "Carreras", "valor": "8", "unidad": "Eventos anuales alrededor del globo" },
+      { "label": "Duración Promedio", "valor": "6h a 8h", "unidad": "Excluyendo la joya de Le Mans (24h)" },
+      { "label": "Paradas en Pits", "valor": "Estratégicas", "unidad": "Se carga combustible sin cambiar llantas" }
     ],
     "pilotos": [
-      { "nombre": "Brendon Hartley", "detalle": "Múltiple campeón mundial y ganador de Le Mans con Porsche y Toyota.", "imagen": "/img/pilotos/hartley.jpg" },
-      { "nombre": "Sébastien Buemi", "detalle": "Piloto oficial estrella de Toyota, tetracampeón mundial del WEC.", "imagen": "/img/pilotos/buemi_wec.jpg" },
-      { "nombre": "Kamui Kobayashi", "detalle": "El piloto más veloz a una vuelta, actualmente combina roles de jefe de equipo y piloto.", "imagen": "/img/pilotos/kobayashi.jpg" }
+      { "nombre": "Brendon Hartley", "detalle": "Velocista y calculador neozelandés. Ha dominado múltiples campeonatos del mundo y coronado Le Mans tanto en la era LMP1 de Porsche como en la Hypercar de Toyota.", "imagen": "/img/pilotos/wec_hartley.jpg" },
+      { "nombre": "Sébastien Buemi", "detalle": "El piloto franquicia del proyecto de Toyota. Tetracampeón del mundo y múltiple ganador de Le Mans, especialista en turnos nocturnos largos.", "imagen": "/img/pilotos/wec_buemi.webp" },
+      { "nombre": "Kamui Kobayashi", "detalle": "El kamikaze japonés, recordado por establecer el récord histórico de velocidad a una vuelta en Le Mans. Opera un asombroso rol dual como piloto principal y director del equipo.", "imagen": "/img/pilotos/wec_kobayashi.webp" }
     ],
     "equipos": [
-      { "nombre": "Toyota Gazoo Racing", "detalle": "Los dominadores absolutos tras la salida de Audi y Porsche, salvadores de la categoría LMP1.", "imagen": "/img/equipos/toyota_wec.jpg" },
-      { "nombre": "Ferrari AF Corse", "detalle": "Marcaron el regreso histórico de Ferrari a la categoría reina tras medio siglo de ausencia.", "imagen": "/img/equipos/ferrari_wec.jpg" },
-      { "nombre": "Porsche Penske Motorsport", "detalle": "El proyecto global para cazar victorias combinadas en Le Mans y Daytona.", "imagen": "/img/equipos/penske_wec.jpg" }
+      { "nombre": "Toyota Gazoo Racing", "detalle": "Los salvadores de la categoría tras la huida de las marcas alemanas. Perfeccionaron la tecnología híbrida al máximo antes de la llegada de sus nuevos rivales." },
+      { "nombre": "Ferrari AF Corse", "detalle": "El nombre más romántico del automovilismo retornó en 2023 con un proyecto de fábrica a la clase principal después de 50 años, paralizando el mundo motor." },
+      { "nombre": "Porsche Penske Motorsport", "detalle": "Organización conjunta creada explícitamente para dominar el WEC y la IMSA en paralelo con el chasis 963 y los colores históricos de la marca." },
+      { "nombre": "Peugeot TotalEnergies", "detalle": "Fieles a la identidad francesa radical, se atrevieron a diseñar un auto innovador que operaba sin un alerón trasero tradicional (9X8)." },
+      { "nombre": "Alpine Endurance Team", "detalle": "La marca deportiva gala compitiendo para glorificar su imagen deportiva, utilizando ingeniosos motores desarrollados a partir de los de Fórmula 2." }
     ],
     "temporadas": [
-      { "anio": "2012", "descripcion": "Inauguración oficial del WEC moderno (surgiendo del ILMC)." },
-      { "anio": "2015", "descripcion": "Pico de la guerra LMP1: Porsche, Audi y Toyota empujan la tecnología híbrida al límite absoluto." },
-      { "anio": "2017", "descripcion": "La clase LMP1 colapsa por sus altísimos costos, obligando a reescribir las reglas." },
-      { "anio": "2021", "descripcion": "Debut inicial del reglamento Hypercar, bajando costos y atrayendo decenas de fabricantes." },
-      { "anio": "2024", "descripcion": "Récord histórico de marcas compitiendo en la máxima categoría (Hypercar) y la introducción de los GT3." }
+      { "anio": "2012", "descripcion": "Inauguración oficial del WEC moderno, reuniendo de forma exitosa las piezas del Intercontinental Le Mans Cup (ILMC)." },
+      { "anio": "2015", "descripcion": "El pináculo tecnológico de la guerra LMP1: Porsche, Audi y Toyota empujan la tecnología de propulsión híbrida a límites inauditos." },
+      { "anio": "2016", "descripcion": "El desgarrador drama de Toyota, perdiendo las 24 Horas de Le Mans y los puntos del WEC a 3 minutos del final por un fallo de potencia." },
+      { "anio": "2017", "descripcion": "La clase LMP1 colapsa inevitablemente bajo el peso de sus costos masivos, forzando a la FIA a redactar de emergencia un nuevo futuro." },
+      { "anio": "2021", "descripcion": "Debut inicial del reglamento Hypercar, nivelando el campo de juego y atrayendo decenas de fabricantes." },
+      { "anio": "2023", "descripcion": "Ferrari irrumpe y gana Le Mans del Centenario en su primer año de regreso a la máxima categoría." },
+      { "anio": "2024", "descripcion": "Se rompen récords históricos de inscriptos en la máxima categoría y se despiden los vetustos GTE para dar paso a la nueva división global LMGT3." }
     ]
   }
 ]

@@ -37,8 +37,8 @@ defineEmits(['update:searchQuery', 'update:selectedCategory']);
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 1rem;
-  background-color: var(--card-bg); /* Toma el color de fondo correcto */
-  color: var(--text-color); /* Toma el color de texto correcto */
+  background-color: var(--card-bg); 
+  color: var(--text-color); 
   width: 100%;
 }
 .search-box::placeholder {

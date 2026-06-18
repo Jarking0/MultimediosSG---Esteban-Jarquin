@@ -55,7 +55,6 @@ function toggleAudio() {
   }
 }
 
-// ASIGNACIÓN DE BORDES POR CATEGORÍA
 const claseCategoria = computed(() => {
   const cat = props.entry.categoria.toLowerCase();
   if (cat.includes('monoplaza')) return 'border-red';
@@ -95,7 +94,6 @@ const claseCategoria = computed(() => {
 .border-green { border-left-color: #10b981; }
 .border-gray { border-left-color: #6b7280; }
 
-/* NUEVA CLASE: Da contexto de posición al logo */
 .card-header-wrapper {
   position: relative;
   width: 100%;
@@ -105,7 +103,7 @@ const claseCategoria = computed(() => {
 .card-image-container {
   width: 100%;
   height: 180px; 
-  overflow: hidden; /* Mantiene el zoom contenido */
+  overflow: hidden; 
 }
 
 .card-img-track {
@@ -117,7 +115,7 @@ const claseCategoria = computed(() => {
 
 .logo-wrapper {
   position: absolute; 
-  bottom: -30px; /* Desplaza el logo exactamente la mitad de su tamaño hacia abajo */
+  bottom: -30px;
   right: 15px;
   width: 60px; 
   height: 60px; 
@@ -137,7 +135,6 @@ const claseCategoria = computed(() => {
 }
 
 .card-content { 
-  /* Padding top de 2.5rem (~40px) para compensar los 30px del logo que sobresale + un margen visual */
   padding: 2.5rem 1.5rem 1.5rem 1.5rem; 
   flex-grow: 1; 
   display: flex; 

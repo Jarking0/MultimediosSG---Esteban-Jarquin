@@ -58,6 +58,7 @@
             <h4 class="slideshow-title">Galería de Pilotos</h4>
             <div class="slideshow-wrapper">
               <button class="slide-arrow left" @click="manualPrevPiloto">❮</button>
+              
               <Transition name="fade" mode="out-in">
                 <div class="slide" :key="slideIndexPilotos">
                   <img :src="entry.pilotos[slideIndexPilotos].imagen" :alt="entry.pilotos[slideIndexPilotos].nombre" class="slide-img" />
@@ -66,6 +67,7 @@
                   </div>
                 </div>
               </Transition>
+              
               <button class="slide-arrow right" @click="manualNextPiloto">❯</button>
             </div>
             <div class="slide-dots">
@@ -81,25 +83,6 @@
                 <p class="item-nombre">{{ e.nombre }}</p>
                 <p class="item-detalle">{{ e.detalle }}</p>
               </div>
-            </div>
-          </div>
-
-          <div class="slideshow-container" v-if="entry.equipos && entry.equipos.length > 0">
-            <h4 class="slideshow-title">Galería de Equipos</h4>
-            <div class="slideshow-wrapper">
-              <button class="slide-arrow left" @click="manualPrevEquipo">❮</button>
-              <Transition name="fade" mode="out-in">
-                <div class="slide" :key="slideIndexEquipos">
-                  <img :src="entry.equipos[slideIndexEquipos].imagen" :alt="entry.equipos[slideIndexEquipos].nombre" class="slide-img" />
-                  <div class="slide-caption">
-                    <em>{{ entry.equipos[slideIndexEquipos].nombre }}</em>
-                  </div>
-                </div>
-              </Transition>
-              <button class="slide-arrow right" @click="manualNextEquipo">❯</button>
-            </div>
-            <div class="slide-dots">
-              <span v-for="(e, i) in entry.equipos" :key="'dot-eq-'+i" class="dot" :class="{ active: slideIndexEquipos === i }" @click="goToSlideEquipo(i)"></span>
             </div>
           </div>
         </div>
@@ -136,7 +119,7 @@ defineEmits(['close']);
 
 const tabActiva = ref('historia');
 
-// --- LÓGICA DEL LIGHTBOX (VISOR DE IMÁGENES) ---
+// --- LÓGICA DEL LIGHTBOX ---
 const selectedImage = ref(null);
 
 const openLightbox = (img) => {
@@ -146,54 +129,55 @@ const closeLightbox = () => {
   selectedImage.value = null;
 };
 
-// --- LÓGICA DE LOS SLIDESHOWS ---
+// --- LÓGICA DEL SLIDESHOW DE PILOTOS ---
 const slideIndexPilotos = ref(0);
-const slideIndexEquipos = ref(0);
 let slideTimerPilotos = null;
-let slideTimerEquipos = null;
 
-// Funciones Pilotos
 const nextSlidePiloto = () => {
   if (props.entry.pilotos && props.entry.pilotos.length > 0) {
     slideIndexPilotos.value = (slideIndexPilotos.value + 1) % props.entry.pilotos.length;
   }
 };
+
 const prevSlidePiloto = () => {
   if (props.entry.pilotos && props.entry.pilotos.length > 0) {
     slideIndexPilotos.value = (slideIndexPilotos.value - 1 + props.entry.pilotos.length) % props.entry.pilotos.length;
   }
 };
-const startTimerPilotos = () => { slideTimerPilotos = setInterval(nextSlidePiloto, 3500); };
-const stopTimerPilotos = () => { if (slideTimerPilotos) clearInterval(slideTimerPilotos); };
-const manualNextPiloto = () => { nextSlidePiloto(); stopTimerPilotos(); startTimerPilotos(); };
-const manualPrevPiloto = () => { prevSlidePiloto(); stopTimerPilotos(); startTimerPilotos(); };
-const goToSlidePiloto = (index) => { slideIndexPilotos.value = index; stopTimerPilotos(); startTimerPilotos(); };
 
-// Funciones Equipos
-const nextSlideEquipo = () => {
-  if (props.entry.equipos && props.entry.equipos.length > 0) {
-    slideIndexEquipos.value = (slideIndexEquipos.value + 1) % props.entry.equipos.length;
-  }
+const startTimerPilotos = () => { 
+  slideTimerPilotos = setInterval(nextSlidePiloto, 3500); 
 };
-const prevSlideEquipo = () => {
-  if (props.entry.equipos && props.entry.equipos.length > 0) {
-    slideIndexEquipos.value = (slideIndexEquipos.value - 1 + props.entry.equipos.length) % props.entry.equipos.length;
-  }
-};
-const startTimerEquipos = () => { slideTimerEquipos = setInterval(nextSlideEquipo, 3500); };
-const stopTimerEquipos = () => { if (slideTimerEquipos) clearInterval(slideTimerEquipos); };
-const manualNextEquipo = () => { nextSlideEquipo(); stopTimerEquipos(); startTimerEquipos(); };
-const manualPrevEquipo = () => { prevSlideEquipo(); stopTimerEquipos(); startTimerEquipos(); };
-const goToSlideEquipo = (index) => { slideIndexEquipos.value = index; stopTimerEquipos(); startTimerEquipos(); };
 
-// Ciclo de vida
+const stopTimerPilotos = () => { 
+  if (slideTimerPilotos) clearInterval(slideTimerPilotos); 
+};
+
+// Controles manuales que reinician el contador automático
+const manualNextPiloto = () => { 
+  nextSlidePiloto(); 
+  stopTimerPilotos(); 
+  startTimerPilotos(); 
+};
+
+const manualPrevPiloto = () => { 
+  prevSlidePiloto(); 
+  stopTimerPilotos(); 
+  startTimerPilotos(); 
+};
+
+const goToSlidePiloto = (index) => { 
+  slideIndexPilotos.value = index; 
+  stopTimerPilotos(); 
+  startTimerPilotos(); 
+};
+
 onMounted(() => {
   startTimerPilotos();
-  startTimerEquipos();
 });
+
 onUnmounted(() => {
   stopTimerPilotos();
-  stopTimerEquipos();
 });
 </script>
 
@@ -248,7 +232,6 @@ onUnmounted(() => {
 .historia-img { 
   width: 100%; height: 110px; object-fit: cover; border-radius: 6px; 
 }
-/* Efecto hover para indicar que la imagen se puede ampliar */
 .historia-img.interactive {
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
@@ -276,7 +259,7 @@ onUnmounted(() => {
 .item-nombre { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 16px; margin: 0 0 2px; color: #fff; }
 .item-detalle { font-size: 13px; color: rgba(255,255,255,0.6); margin: 0; }
 
-/* SLIDESHOW (CARRUSEL GRANDE AUTOMÁTICO) */
+/* SLIDESHOW DE PILOTOS */
 .slideshow-container {
   margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center;
 }
@@ -319,7 +302,7 @@ onUnmounted(() => {
 .year { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; color: var(--primary-color); flex-shrink: 0; width: 50px; font-size: 1.1rem; }
 .event-desc { font-family: 'Barlow', sans-serif; color: #d1d5db; line-height: 1.5; }
 
-/* --- NUEVO: ESTILOS DEL LIGHTBOX --- */
+/* LIGHTBOX */
 .lightbox-overlay {
   position: fixed; top: 0; left: 0; width: 100%; height: 100%;
   background: rgba(0, 0, 0, 0.9); backdrop-filter: blur(8px);

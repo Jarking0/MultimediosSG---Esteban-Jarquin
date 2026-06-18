@@ -19,7 +19,7 @@
       </div>
       
       <p v-if="filteredEntries.length === 0" class="no-results">
-        No se encontraron categorías. 🏁
+        No se encontraron categorías.
       </p>
     </main>
 
@@ -78,26 +78,26 @@ onMounted(async () => {
 
 <style>
 :root {
-  --bg-color: #f3f4f6; /* Gris muy clarito para el fondo */
-  --text-color: #1f2937; /* Gris muy oscuro para las letras (Modo claro) */
-  --card-bg: #ffffff; /* Tarjetas blancas */
+  --bg-color: #f3f4f6; 
+  --text-color: #1f2937; 
+  --card-bg: #ffffff; 
   --header-bg: #ffffff;
-  --primary-color: #dc2626; /* Un rojo racing para el tema de autos */
+  --primary-color: #dc2626; 
 }
 
 .dark-mode {
-  --bg-color: #111827; /* Azul noche muy oscuro */
-  --text-color: #f9fafb; /* Blanco tiza para las letras (Modo oscuro) */
-  --card-bg: #1f2937; /* Tarjetas grises oscuras */
+  --bg-color: #111827;
+  --text-color: #f9fafb;
+  --card-bg: #1f2937;
   --header-bg: #1f2937;
-  --primary-color: #ef4444; /* Rojo más brillante para el modo oscuro */
+  --primary-color: #ef4444; 
 }
 
 body {
   margin: 0;
   font-family: 'Inter', Arial, sans-serif;
   background-color: var(--bg-color);
-  color: var(--text-color); /* El body hereda el color de texto correcto */
+  color: var(--text-color); 
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -139,7 +139,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  align-items: stretch; /* Asegura que todas las tarjetas estiren igual */
+  align-items: stretch;
 }
 
 @media (max-width: 900px) {

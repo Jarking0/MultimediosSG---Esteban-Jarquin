@@ -27,7 +27,7 @@ defineEmits(['toggle-theme']);
 
 .header h1 {
   margin: 0;
-  color: var(--text-color); /* Fuerza el color en el título */
+  color: var(--text-color); 
 }
 
 .theme-btn {
