@@ -1,9 +1,9 @@
-# Enciclopedia del Sistema Solar
+# Enciclopedia del Automovilismo
 
 **Proyecto Personal - IF7102 Multimedios (Ciclo 2026)**
 Sede Regional de Guanacaste, Recinto de Liberia - Universidad de Costa Rica.
 
-Esta es una enciclopedia interactiva desarrollada como proyecto final para demostrar el aprendizaje autónomo de un framework JavaScript moderno. La aplicación permite explorar los astros de nuestro sistema solar, filtrar por categorías, buscar en tiempo real y escuchar audios descriptivos.
+Esta es una enciclopedia interactiva desarrollada como proyecto final para demostrar el aprendizaje autónomo de un framework JavaScript moderno. La aplicación permite explorar las categorías del automovilismo, filtrar por categorías, buscar en tiempo real y escuchar audios descriptivos.
 
 ## Tecnologías y Framework
 * **Framework elegido:** Vue 3 (utilizando Composition API con `<script setup>`).
@@ -15,7 +15,7 @@ Esta es una enciclopedia interactiva desarrollada como proyecto final para demos
 * **Modularidad:** Separación lógica en 4 componentes (`HeaderSection`, `FilterControls`, `EntryCard`, `AudioPlayer`).
 * **Reactividad:** Uso de `ref` y `computed` para el filtrado instantáneo en la barra de búsqueda y por botones de categoría.
 * **Consumo de datos:** Carga asíncrona de la información desde un archivo estático `enciclopedia.json` mediante la API `fetch()` en el hook del ciclo de vida `onMounted`.
-* **Tema Dinámico:** Soporte para cambiar entre Modo Claro (☀️) y Modo Oscuro (🌙) de forma fluida.
+* **Tema Dinámico:** Soporte para cambiar entre Modo Claro y Modo Oscuro de forma fluida.
 
 ## Instrucciones de Ejecución
 

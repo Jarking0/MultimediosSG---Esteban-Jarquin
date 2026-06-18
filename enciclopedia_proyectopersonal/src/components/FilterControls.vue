@@ -2,7 +2,7 @@
   <div class="filters">
     <input 
       type="text" 
-      placeholder="Buscar astro..." 
+      placeholder="Buscar categoría..." 
       :value="searchQuery"
       @input="$emit('update:searchQuery', $event.target.value)"
       class="search-box"
@@ -37,6 +37,13 @@ defineEmits(['update:searchQuery', 'update:selectedCategory']);
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 1rem;
+  background-color: var(--card-bg); /* Toma el color de fondo correcto */
+  color: var(--text-color); /* Toma el color de texto correcto */
+  width: 100%;
+}
+.search-box::placeholder {
+  color: var(--text-color);
+  opacity: 0.6;
 }
 .category-buttons {
   display: flex;

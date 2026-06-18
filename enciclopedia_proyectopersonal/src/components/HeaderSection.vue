@@ -22,7 +22,14 @@ defineEmits(['toggle-theme']);
   color: var(--text-color);
   border-radius: 8px;
   margin-bottom: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
 }
+
+.header h1 {
+  margin: 0;
+  color: var(--text-color); /* Fuerza el color en el título */
+}
+
 .theme-btn {
   padding: 0.5rem 1rem;
   cursor: pointer;

@@ -32,39 +32,44 @@
     "categoria": "Stock Cars",
     "imagen_pista": "/img/nascar.jpg",
     "imagen_logo": "/img/nascar_logo.png",
-    "descripcion": "La categoría reina en Estados Unidos, conocida por sus emocionantes carreras en óvalos a velocidades vertiginosas y el contacto constante entre los autos."
-  },
+    "descripcion": "La categoría reina en Estados Unidos, conocida por sus emocionantes carreras en óvalos a velocidades vertiginosas y el contacto constante entre los autos.",
+    "audio": "/audio/nascar.mp3"
+},
   {
     "id": 5,
     "titulo": "IndyCar Series",
     "categoria": "Monoplazas",
     "imagen_pista": "/img/indycar.jpg",
     "imagen_logo": "/img/indycar_logo.png",
-    "descripcion": "La principal categoría de monoplazas en EE. UU. Su evento estrella son las míticas 500 Millas de Indianápolis."
-  },
+    "descripcion": "La principal categoría de monoplazas en EE. UU. Su evento estrella son las míticas 500 Millas de Indianápolis.",
+    "audio": "/audio/indycar.mp3"
+},
   {
     "id": 6,
     "titulo": "Rally Dakar",
     "categoria": "Rally Raid",
     "imagen_pista": "/img/dakar.jpg",
     "imagen_logo": "/img/dakar_logo.png",   
-    "descripcion": "La carrera de campo a través más dura del planeta, atravesando dunas, desiertos y terrenos implacables durante varias semanas."
-  },
+    "descripcion": "La carrera de campo a través más dura del planeta, atravesando dunas, desiertos y terrenos implacables durante varias semanas.",
+    "audio": "/audio/dakar.mp3"
+},
   {
     "id": 7,
     "titulo": "Fórmula E",
     "categoria": "Monoplazas",
     "imagen_pista": "/img/fe.jpg",
     "imagen_logo": "/img/fe_logo.png",
-    "descripcion": "El futuro del automovilismo. Carreras de monoplazas 100% eléctricos disputadas en circuitos callejeros en el centro de las ciudades más importantes."
-  },
+    "descripcion": "El futuro del automovilismo. Carreras de monoplazas 100% eléctricos disputadas en circuitos callejeros en el centro de las ciudades más importantes.",
+    "audio": "/audio/fe.mp3"
+},
   {
     "id": 8,
     "titulo": "DTM (Deutsche Tourenwagen Masters)",
     "categoria": "Turismos",
     "imagen_pista": "/img/dtm.jpg",
     "imagen_logo": "/img/dtm_logo.png",
-    "descripcion": "El campeonato de turismos más importante de Alemania y uno de los más competitivos del mundo, utilizando potentes autos GT3."
+    "descripcion": "El campeonato de turismos más importante de Alemania y uno de los más competitivos del mundo, utilizando potentes autos GT3.",
+    "audio": "/audio/dtm.mp3"
   },
   {
     "id": 9,
@@ -72,7 +77,8 @@
     "categoria": "Resistencia",
     "imagen_pista": "/img/imsa.jpg",
     "imagen_logo": "/img/imsa_logo.png",
-    "descripcion": "El principal campeonato de autos deportivos y prototipos en Norteamérica, famoso por las 24 Horas de Daytona."
+    "descripcion": "El principal campeonato de autos deportivos y prototipos en Norteamérica, famoso por las 24 Horas de Daytona.",
+    "audio": "/audio/imsa.mp3"
   },
   {
   "id": 10,
@@ -80,6 +86,7 @@
   "categoria": "Resistencia",
   "imagen_pista": "/img/wec.webp",
   "imagen_logo": "/img/wec_logo.png",
-  "descripcion": "El Campeonato Mundial de Resistencia (WEC) es la máxima competición de carreras de resistencia organizada por la FIA y el ACO. Reúne a prototipos Hypercar y vehículos LMGT3 en pruebas icónicas como las 24 Horas de Le Mans, donde equipos y pilotos compiten por la victoria en carreras de larga duración."
+  "descripcion": "El Campeonato Mundial de Resistencia (WEC) es la máxima competición de carreras de resistencia organizada por la FIA y el ACO. Reúne a prototipos Hypercar y vehículos LMGT3 en pruebas icónicas como las 24 Horas de Le Mans, donde equipos y pilotos compiten por la victoria en carreras de larga duración.",
+  "audio": "/audio/wec.mp3"
  }
 ]

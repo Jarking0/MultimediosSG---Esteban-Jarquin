@@ -87,7 +87,6 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Estilos para el contenedor principal */
 .app-container {
   min-height: 100vh;
   padding: 2rem;
